@@ -1,1 +1,1 @@
-Add your source code files to this directory. Please don't rename this directory.
+Our source code consists of two angular mini apps, and they contain their respective readme for instructions to run the projects locally.
