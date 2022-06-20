@@ -1,0 +1,83 @@
+/*tree menu start*/
+.DSA_wb_tree-invisible {
+    display: none;
+}
+.DSA_wb_tree  ul,
+.DSA_wb_tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+.DSA_wb_tree .mat-tree-node {  
+    font-size: $size-hd-18;
+    font-weight: $font-400;
+    font-family: $font-style-2;
+    font-style: normal;
+    line-height: 40px;
+    min-height: 40px;
+    color: $text-neutral-80;
+    position: relative;  
+}
+.DSA_wb_tree .mat-tree-node .DSA_Wb_custom-checkbox,
+.DSA_wb_tree .mat-tree-node .mat-icon-button{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.DSA_wb_tree .mat-tree-node .DSA_Wb_custom-checkbox .mat-checkbox-layout .mat-checkbox-label{
+    font-size: $size-hd-18;
+    font-weight: $font-400;
+    font-family: $font-style-2;
+    color: $text-neutral-80;
+}
+.DSA_wb_tree .mat-tree-node:hover .DSA_Wb_custom-checkbox .mat-checkbox-layout .mat-checkbox-label {
+    color:$text-black;
+}
+.DSA_wb_tree .mat-tree-node[aria-expanded="true"][role="group"] .DSA_Wb_custom-checkbox .mat-checkbox-layout .mat-checkbox-label{
+    color:$text-primary-80;
+    font-weight: $font-600;
+}
+.DSA_wb_tree  ul{
+    padding-left: 40px;
+}
+.dsa_Treeexpanded>.mat-tree-node{
+    color: $bg-primary-80;
+    font-weight: $font-600;
+}
+.DSA_wb_tree .mat-tree-node:hover,
+.DSA_wb_tree .mat-tree-node:focus{
+    text-decoration: none;
+    color:$text-black;
+    background-clip: content-box;
+    background-color: $bg-neutral-40;
+}
+
+
+.DSA_wb_tree .DSA_treemenuitem.mat-tree-node:hover,
+.DSA_wb_tree .DSA_treemenuitem.mat-tree-node:focus{
+    color:$text-neutral-80;
+    background-color: transparent;
+}
+.DSA_wb_tree .mat-tree-node .DSA_active,
+.DSA_wb_tree .mat-tree-node .DSA_active:hover,
+.DSA_wb_tree .mat-tree-node .DSA_active:focus{
+    color:$bg-primary-80;
+    background: $bg-primary-50;
+}
+.DSA_wb_tree .mat-tree-node[role="treeitem"] .DSA_active{
+    border-radius: $border-radius-big;
+}
+.DSA_wb_tree ul .mat-tree-node li.mat-tree-node,
+.DSA_wb_tree ul .mat-tree-node a.mat-tree-node {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.DSA_wb_tree button.mat-icon-button:focus{
+    outline: none;
+}
+.DSA_wb_tree .DSA_singlenode.mat-icon-button{
+    width:16px
+}
+.DSA_wb_tree .mat-tree-node[role="treeitem"] .mat-icon-button{
+    width:15px;  
+}
+/*tree menu end*/

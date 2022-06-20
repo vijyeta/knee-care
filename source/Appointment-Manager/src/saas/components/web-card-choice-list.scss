@@ -1,0 +1,19 @@
+.option_ul.DSA_selectionlist li a{
+    padding:16px 24px;
+    min-height: auto;
+}
+.option_ul.DSA_selectionlist li a div.DSA_wb_mainBodyTxt {
+    line-height: $line-height-24;
+}
+.option_ul.DSA_selectionlist li a.icon_withAction.selected div.DSA_wb_mainBodyTxt{
+    color:$bg-neutral-80;
+}
+.option_ul.DSA_selectionlist .DSA_wb_marginicon32{
+    margin: 0 0 0 56px;
+}
+.option_ul.DSA_selectionlist li a.icon_withAction{
+    background-color: $bg-neutral-40;
+}
+.option_ul.DSA_selectionlist li a.icon_withAction.selected{
+    background-color: $bg-primary-50;
+}

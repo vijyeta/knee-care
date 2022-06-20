@@ -1,0 +1,72 @@
+// custom accordion styles
+.DSA_wb-cus-accordion .mat-expansion-panel{
+    margin: 16px 0 !important;
+    border-radius: $border-radius-big !important;
+    @extend %default-shadow;
+    .mat-expansion-panel-header {
+      height: 40px !important;
+      padding: 0 16px;
+      font-family: $font-style-2;
+      font-size: $size-hd-18;
+      font-weight: $font-600;
+      font-style: normal;
+      line-height: $line-height-18;
+      border-radius: $border-radius-none;
+      border-top-right-radius: $border-radius-big;
+      border-top-left-radius: $border-radius-big;
+      @extend %default-shadow;
+       
+      span{
+        &:after{
+          /* padding: 5px; */
+          margin-top: -10px;
+        }
+      }
+      .mat-expansion-indicator::after{
+        color: $text-neutral-90;
+      }
+      .mat-expansion-panel-header-title{
+        color: $text-neutral-90;
+      }
+      &:hover{        
+        .mat-expansion-panel-header-title, .mat-expansion-indicator::after{
+          color: $text-primary-80;
+        }    
+      }   
+      &:focus{       
+        .mat-expansion-panel-header-title, .mat-expansion-indicator::after{
+          color: $text-neutral-90;
+        }    
+      } 
+    }    
+    
+    .mat-expansion-panel-body{
+      background: $bg-white;
+      padding: 0
+    } 
+    &:hover{
+      @extend %default-shadow;
+      background:$bg-neutral-40;
+    }
+    &:focus{
+      @extend %active-shadow;
+      background:$bg-neutral-50;
+    }
+  }
+  
+.DSA_wb-cus-accordion .mat-expansion-panel.mat-expanded{
+  .mat-expansion-panel-header {
+    background: $bg-primary-80!important;
+    .mat-expansion-panel-header-title{
+      color: $text-white!important
+    }
+    .mat-expansion-indicator::after, .mat-expansion-panel-header-description{
+      color: $text-white;
+    }  
+    &:hover{
+      .mat-expansion-indicator::after, .mat-expansion-panel-header-description{
+        color: $text-white;
+      }  
+    }
+  }   
+}

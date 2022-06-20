@@ -1,0 +1,59 @@
+<mat-card
+  class="DSA_wb_card-widget cursor-pointer"
+  [routerLink]="['/appointment-details', appointment.id]"
+>
+  <mat-card-content>
+    <ul class="DSA_wb_listItemSingle">
+      <li>
+        <span class="clearfix">
+          <span
+            class="DSA_wb_listLeft DSA_popoverMainCtr d-flex align-items-center"
+          >
+            <!-- <img
+              alt="avatar"
+              [src]="appointment.profileUrl"
+              class="float-left marR16"
+              data-Pos="right"
+              id="cardpopup"
+            /> -->
+            <ngx-avatar
+              [name]="appointment.name"
+              [size]="45"
+              [round]="true"
+              class="marL0 float-left marR16"
+            ></ngx-avatar>
+            <span>
+              <h2 class="DSA_wb_h2Header web-GreyDarkest DSA_wb_text-1line">
+                {{ appointment.name }}
+              </h2>
+              <span
+                class="DSA_wb_caption web-GreyLight d-block marT8 DSA_wb_text-1line"
+              >
+                {{ appointment.appointmentStartTime | date: "mediumDate" }}
+              </span>
+              <span
+                class="DSA_wb_caption web-GreyLight d-block marT8 DSA_wb_text-1line"
+              >
+                {{ appointment.appointmentStartTime | date: "shortTime" }}
+                -
+                {{ appointment.appointmentEndTime | date: "shortTime" }}
+              </span>
+            </span>
+          </span>
+          <span class="DSA_wb_vertical-RightCenter">
+            <a
+              href="javascript:void(0);"
+              class="icon purple x-24 call-icon float-left"
+              aria-label="call"
+            ></a>
+            <a
+              href="javascript:void(0);"
+              class="icon purple x-24 icon_approved_docs marL16 float-left"
+              aria-label="email"
+            ></a>
+          </span>
+        </span>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>

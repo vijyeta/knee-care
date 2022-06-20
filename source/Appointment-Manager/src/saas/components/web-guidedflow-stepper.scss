@@ -1,0 +1,81 @@
+.DSA_stepperCtr .mat-stepper-horizontal-line{
+    background: url('../../assets/images/Guidedflow_seperator.png') repeat-x;
+    border:0;
+    height:4px;
+    margin:0;
+    flex:0;
+    min-width: 40px;
+}
+.DSA_stepperCtr .mat-step-header .mat-step-icon-state-number{
+    width:40px;
+    height: 40px;
+    display: block;
+    margin:0 auto;
+    border-radius: $border-radius-circle;
+    font-size: $size-text-16;
+    font-family: $font-style-1;
+    font-weight: $font-500;
+    font-style: normal;
+    line-height: 40px;
+    text-align: center;
+    background: none;
+    color: $text-neutral-80;
+    border:$border-width-1 solid $border-neutral-80;
+}
+.DSA_stepperCtr .mat-step-header .mat-step-label.mat-step-label-active{
+    color:$text-neutral-80;
+}
+.DSA_stepperCtr .mat-step-icon{
+    width:40px;
+    height: 40px;
+    display: block;
+    margin:0 auto;
+    border-radius: $border-radius-circle;
+    font-size: $size-text-16;
+    font-family: $font-style-1;
+    font-weight: $font-500;
+    font-style: normal;
+    line-height: 40px;
+    text-align: center;
+    background: none;
+    color: $text-status-success;
+    border:$border-width-1 solid $border-status-success;
+}
+.DSA_stepperCtr .mat-step-text-label{
+    text-align: center;
+    font-size: $size-text-12;
+    font-family: $font-style-1;
+    font-weight: $font-500;
+    font-style: normal;
+}
+.DSA_stepperCtr .mat-step-label-selected .mat-step-text-label{
+    color: $text-primary-80;
+}
+.DSA_stepperCtr .mat-step-icon-state-done ~ .mat-step-label .mat-step-text-label{
+    color: $text-status-success;
+}
+.DSA_stepperCtr .mat-horizontal-stepper-header{
+    display: block;
+    min-width: 120px;
+    padding: 0;
+    padding-top: 8px;
+}
+.DSA_stepperCtr .mat-horizontal-stepper-header .mat-step-icon{
+    margin-right: auto;
+}
+.DSA_stepperCtr .mat-horizontal-stepper-header:active{
+    background: $bg-primary-50;
+}
+
+.DSA_stepperCtr .mat-step-label{
+    display: block;
+    margin-top: 8px;
+}
+.DSA_stepperCtr .mat-step-header .mat-step-icon-selected{
+    color: $text-primary-80;
+    border: $border-width-1 solid $border-primary-80;
+}
+.DSA_stepperCtr .mat-step-header:hover .mat-step-label,
+.DSA_stepperCtr .mat-step-header:hover .mat-step-icon-state-number{
+    color:$text-black !important;
+}

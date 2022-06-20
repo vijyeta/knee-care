@@ -1,0 +1,34 @@
+<div class="DSA_wb_customTab DSA_navTabWhite DSA_wb_Secondary">
+  <mat-tab-group disableRipple>
+    <mat-tab>
+      <ng-template mat-tab-label> Upcoming </ng-template>
+      <div class="container-fluid marT8">
+        <div class="row">
+          <div
+            class="col-md-6 col-lg-4 col-sm-12 marB8"
+            *ngFor="let appointment of upcomingAppointments"
+          >
+            <app-appointment-card
+              [appointment]="appointment"
+            ></app-appointment-card>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label> Previous </ng-template>
+      <div class="container-fluid marT8">
+        <div class="row">
+          <div
+            class="col-md-6 col-lg-4 col-sm-12 marB8"
+            *ngFor="let appointment of previousAppointments"
+          >
+            <app-appointment-card
+              [appointment]="appointment"
+            ></app-appointment-card>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

@@ -1,0 +1,134 @@
+/* Datepicker CSS - Start */
+.DSA_Wb_custom-form-field {
+  width: 100%;
+}
+.DSA_Wb_custom-form-field.mat-form-field-appearance-legacy
+  .mat-form-field-label {
+  color: $grey-light;
+  padding: 8px 16px;
+}
+.DSA_Wb_custom-form-field.mat-form-field-appearance-legacy
+  .mat-form-field-underline,
+.DSA_Wb_custom-form-field.mat-form-field-appearance-legacy.mat-form-field-disabled
+  .mat-form-field-underline {
+  background: $bg-neutral-40;
+}
+.DSA_Wb_custom-form-field.mat-form-field-appearance-legacy.mat-form-field-disabled
+  .mat-form-field-underline {
+  background: $bg-neutral-40;
+}
+.DSA_Wb_custom-form-field.mat-form-field.mat-focused .mat-form-field-label {
+  color: $text-primary-80;
+}
+.DSA_Wb_custom-form-field.mat-form-field.mat-focused .mat-form-field-ripple {
+  background: $bg-primary-80;
+  height: 2px;
+}
+.DSA_Wb_custom-form-field input {
+  color: $text-black;
+  height: 53px;
+  background: $bggrey-lightwhite;
+  border-radius: $border-radius-big $border-radius-big 0 0;
+  padding: 24px 12px 10px;
+  transition: 0.2s all;
+
+  &:hover:not([disabled]) {
+    background: $bg-white;
+    @extend %input-hover-shadow;
+  }
+}
+.DSA_Wb_custom-form-field.white.mat-form-field.mat-focused
+  .mat-form-field-ripple {
+  background: $bg-white;
+  height: 2px;
+}
+.DSA_Wb_custom-form-field.white.mat-form-field-appearance-legacy
+  .mat-form-field-label {
+  color: $text-white;
+}
+.DSA_Wb_custom-form-field.white.mat-form-field-appearance-legacy
+  .mat-form-field-infix {
+  padding: 4px 0;
+}
+.DSA_Wb_custom-form-field.white .mat-form-field-label-wrapper {
+  top: -0.5em;
+  padding-top: -0.5em;
+}
+.DSA_Wb_custom-form-field.white input.mat-input-element {
+  color: $text-white;
+}
+.DSA_Wb_custom-form-field.white.mat-form-field-appearance-legacy
+  .mat-form-field-wrapper {
+  margin-bottom: -4px;
+}
+
+.mat-datepicker-content {
+  border-radius: $border-radius-big !important;
+  @extend %date-picker-shadow;
+}
+.DSA_wb_dateClass .mat-calendar-header {
+  background: $bg-primary-80;
+  padding: 10px 8px;
+  border-radius: $border-radius-big $border-radius-big 0 0;
+}
+.DSA_wb_dateClass .mat-calendar-controls {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.DSA_wb_dateClass .mat-calendar-arrow {
+  border-top-color: $bg-white;
+}
+.DSA_wb_dateClass .mat-calendar-next-button::after,
+.DSA_wb_dateClass .mat-calendar-previous-button::after {
+  color: $text-white !important;
+}
+.DSA_wb_dateClass .mat-calendar-next-button,
+.DSA_wb_dateClass .mat-calendar-previous-button,
+.DSA_wb_dateClass .mat-datepicker-toggle {
+  color: $text-white;
+}
+.DSA_wb_dateClass .mat-calendar-period-button {
+  font-size: $size-hd-24;
+  color: $text-white;
+}
+.DSA_wb_dateClass .mat-calendar-next-button:focus,
+.DSA_wb_dateClass .mat-calendar-previous-button:focus,
+.DSA_wb_dateClass .mat-calendar-period-button:focus {
+  outline: none !important;
+}
+
+.DSA_wb_dateClass .mat-calendar-table-header th {
+  padding: 12px 0 6px 0;
+}
+.mat-datepicker-content.mat-datepicker-content-touch .DSA_wb_dateClass {
+  max-width: 328px;
+  max-height: 420px;
+}
+
+.DSA_wb_dateClass .mat-calendar-body-cell-content,
+.DSA_wb_dateClass .mat-calendar-table-header th {
+  font-size: $size-text-16;
+}
+.DSA_wb_dateClass .mat-calendar-body-cell-content {
+  color: $text-black;
+  border-radius: $border-radius-big;
+}
+.DSA_wb_dateClass .mat-calendar-table-header-divider::after {
+  background: none;
+}
+.DSA_wb_dateClass .mat-calendar-body-selected {
+  background-color: $bg-primary-80;
+  color: $text-white;
+  box-shadow: none;
+}
+
+.DSA_wb_dateClass .mat-calendar-body-today.mat-calendar-body-selected {
+  box-shadow: none;
+}
+
+.DSA_wb_mat-suffix.mat-datepicker-toggle {
+  top: 7px;
+  right: 10px;
+}
+
+/* Datepicker CSS - End */

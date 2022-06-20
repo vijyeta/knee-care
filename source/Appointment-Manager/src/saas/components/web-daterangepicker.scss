@@ -1,0 +1,214 @@
+/*Date range picker styles*/
+.theme-purple{
+    &.bs-datepicker{
+        @extend %default-shadow;
+        border-radius: $border-radius-big;
+    }
+    .bs-datepicker-container{
+        padding: 0
+    }  
+    .bs-datepicker-head{
+        background: $bg-primary-80;
+        height: 56px;
+        border-radius: $border-radius-big 0 0 0;
+    }  
+    .bs-datepicker-body{
+        padding: 0 16px;
+        margin:8px 0;
+        border: none;
+        border-right: 1px solid $border-neutral-50;
+    }
+    .bs-datepicker-multiple + .bs-datepicker-multiple{
+        margin-left: 0;
+        .bs-datepicker-head {
+            border-radius: 0 $border-radius-big 0 0;
+        }
+        .bs-datepicker-body{
+            border: none;
+        }
+    }  
+    
+    .bs-datepicker-body table th{
+        color: $text-neutral-80;
+        font-size: $size-text-16;
+        padding: 8px;  
+    }  
+    .bs-datepicker-body table td{
+        color:$text-black;
+        font-size: $size-text-16;
+        padding: 4px;
+        span{
+            font-size: $size-text-16;
+        }
+    }  
+    .bs-datepicker-body table.days span{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .bs-datepicker-body table td span.selected,  
+    .bs-datepicker-body table td.selected span,  
+    .bs-datepicker-body table td span[class*="select-"]:after,  
+    .bs-datepicker-body table td[class*="select-"] span:after{
+        background: $bg-primary-80;
+        border-radius: $border-radius-big;
+    }  
+    .bs-datepicker-body table td.is-highlighted:not(.disabled):not(.selected) span, 
+    .bs-datepicker-body table td span.is-highlighted:not(.disabled):not(.selected){
+        border-radius: $border-radius-big;
+        background: $bg-primary-80;
+        color: $text-white
+    }  
+    .bs-datepicker-body table.days tr td:first-child span.in-range:not(.select-start):before{
+        border-top-left-radius: $border-radius-big;
+        border-bottom-left-radius: $border-radius-big;
+    }
+    .bs-datepicker-body table.days tr td:last-child span.in-range:not(.select-start):before{
+        border-top-right-radius: $border-radius-big;
+        border-bottom-right-radius: $border-radius-big;
+    }  
+    .bs-datepicker-body table.days td.active:not(.select-start):before, 
+    .bs-datepicker-body table.days td.in-range:not(.select-start):before, 
+    .bs-datepicker-body table.days span.active:not(.select-start):before, 
+    .bs-datepicker-body table.days span.in-range:not(.select-start):not(.selected):not(.is-highlighted):before{
+        background: $bg-primary-60;
+    }
+    
+    .bs-datepicker-body table td:before, .bs-datepicker-body table td span:before { 
+        top: 0;
+        bottom: 0;
+        left: -8px;
+        right: -8px; 
+    }  
+      
+    .bs-datepicker-head button{
+        font-size: $size-hd-24;
+        font-weight: 500;
+        font-family: $font-style-2;
+    }      
+} 
+
+.date-range-picker{
+    width: 100%;   
+    position: relative;
+    background:$bg-neutral-30;
+    border-radius: $border-radius-big $border-radius-big 0 0;
+    transition: 0.2s all;
+    margin: 0;
+    &:hover:not([disabled]){
+        background: $bg-white;
+        @extend %input-hover-shadow; 
+    }
+    input{
+        border: none;    
+        padding: 16px;
+        background: none;
+        border-radius: $border-radius-none;
+        display: inline-block;
+        width: 95%;
+        height: 53px;
+        &:focus{
+            outline: none;
+        }    
+    }
+    .icon{
+        position: absolute;
+        right: 16px;
+        bottom:13px;
+    }    
+     
+    .date-range-underline{
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+        transform: scaleY(1.0001);
+        bottom:0;
+        background: $bg-neutral-50;
+        left: 0;       
+        height: 1px;
+        .ripple-effect{        
+            position: absolute;
+            left: 0;
+            width: 100%;
+            transform-origin: 50%;
+            transform: scaleX(.5);
+            opacity: 0;
+            transition: background-color .3s cubic-bezier(.55,0,.55,.2);
+            top: 0;
+            height: 2px;
+            overflow: hidden;
+            background-color: rgba(0,0,0,.87);
+        }
+    }  
+    &:hover{
+        .date-range-underline{  
+            background: $bg-black;
+        }
+    } 
+    &:focus-within{
+        .ripple-effect{  
+            height: 2px;
+            background: $bg-primary-80;
+            opacity: 1;
+            transform: scaleX(1);
+            transition: transform .3s cubic-bezier(.25,0.8,.25,1),opacity .1s
+                                    cubic-bezier(.25,0.8,.25,1),background-color .3s
+                                    cubic-bezier(.25,0.8,.25,1)
+        } 
+    }  
+}
+.date-range-pickerLabel{
+    font-size: $size-text-12;
+    color: $text-neutral-90;
+ } 
+.date-range-picker_nofloat{  
+    .date-range-underline{
+        display: none;
+    } 
+    &:focus-within{
+        .date-range-underline{
+            display: block;
+        } 
+    }  
+    &:hover:not([disabled]){
+        background: none;
+        box-shadow: none !important;
+    }
+    input{
+        color: #000000;
+        height: 35px;
+        background:$bg-neutral-30;
+        border-radius: $border-radius-small $border-radius-small 0 0;
+        padding: 8px 40px 8px 8px;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+        width: 100%;         
+        &:hover{
+            background: $bg-primary-50;
+            box-shadow: none !important; 
+        }             
+    }
+    .icon{
+        bottom:6px;
+        right: 8px;
+    }   
+     
+}
+.date-range-pickerdisabled{
+    .date-range-pickerLabel{
+        font-size: $size-text-12;
+        color: $text-neutral-50;
+     } 
+     .icon{
+        color: $text-neutral-50;
+    } 
+    .date-range-picker_nofloat{
+        &:hover{
+            box-shadow: none !important;
+        }
+        input:hover{
+            background: $bg-neutral-30;
+            box-shadow: none !important;
+        } 
+    }
+}

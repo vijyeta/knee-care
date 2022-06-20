@@ -1,0 +1,33 @@
+.DSA_wb_sec_listItemSingle{
+    margin:3px !important;  
+    li{
+        a{
+            
+            border-radius:$border-radius-small ;
+            span{
+                margin-left:40px;
+                display: block;
+                white-space:nowrap;
+            }
+        }
+    }
+    li > a, li > span{    
+        padding: 8px 16px;
+        border: none;
+        display: block;
+        position: relative;       
+    }
+    li.active{
+        a{
+            border: none;     
+            background: $bg-primary-50; 
+            color: $text-primary-80!important;
+        }
+    }  
+}
+
+.DSA_wb_sec_listItemSingle li.active>a{
+    &:before{
+    display: none;
+    }
+    }

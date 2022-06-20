@@ -1,0 +1,17 @@
+.DSA_wb_card-widget-02.DSA_wb_card-withprimarybg{
+    background: $bg-primary-80;
+    width: 274px;
+    height: 304px;  
+    padding: 0 16px 8px;
+    .DSA_matCard-imageCtr{
+        margin: 0 -16px 16px;
+    }
+    .mat-card-subtitle{
+        margin-bottom: 8px;
+    }    
+}
+.DSA_wb_card-widget-02.DSA_wb_card-withprimarybg a.web-Greywhite{
+    &:hover, &:focus{
+        color: $text-white;
+    }
+}

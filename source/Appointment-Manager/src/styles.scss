@@ -1,0 +1,77 @@
+/*custom Sass*/
+@import "saas/variables";
+
+@import "saas/mixins";
+@import "saas/media_query";
+
+/*plugin css*/
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+@import "saas/main.scss";
+
+/*custom css*/
+@import "saas/customBootstrap.scss";
+@import "saas/allComponents.scss";
+@import "saas/web_allComponents.scss";
+@import "saas/iconStyles.scss";
+@import "saas/utility.scss";
+@import "assets/fonts/DS-iconfont.css";
+
+@import "@material/tab-bar/dist/mdc.tab-bar.css";
+@import "@material/tab-scroller/dist/mdc.tab-scroller.css";
+@import "@material/tab-indicator/dist/mdc.tab-indicator.css";
+@import "@material/tab/dist/mdc.tab.css";
+
+// Global CSS
+.mt-64 {
+  margin-top: 64px;
+}
+
+.pt-64 {
+  padding-top: 64px;
+}
+
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+.mat-input-element {
+  box-sizing: inherit !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.success-snackbar {
+  font-size: larger;
+  color: $text-black;
+  background-color: $bg-status-success;
+  border: $border-width-1 solid rgba(0, 122, 82, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: $border-radius-big;
+}
+
+.success-snackbar .mat-simple-snackbar-action {
+  color: $text-black;
+}
+
+.error-snackbar {
+  font-size: larger;
+  color: $text-black;
+  background-color: $bg-status-error;
+  border: $border-width-1 solid rgba(204, 41, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: $border-radius-big;
+}
+
+.error-snackbar .mat-simple-snackbar-action {
+  color: $text-black;
+}
+
+.w-100 {
+  width: 100%;
+}

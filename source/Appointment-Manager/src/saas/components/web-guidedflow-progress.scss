@@ -1,0 +1,31 @@
+/*guided flow progress*/  
+.DSA_progressCtr{
+    width:300px;
+} 
+.DSA_centerAlign{
+    text-align: center;
+}
+.listRadio li{
+    float:none;
+}
+.DSA_centerWdth{
+    width:550px;
+    margin:0 auto;
+}
+@media screen and (max-width:767px){
+    .DSA_centerWdth{
+        width:100%;
+        margin:0;
+    }
+}
+.DSA_prevNext{
+    background:#fafafa;
+    display: inline-block;
+}
+.DSA_prevNext:hover .icon{
+    color: $text-primary-80;
+}
+.DSA_prevNext:hover{
+    @extend %default-shadow;
+}
+/*guided flow progress*/

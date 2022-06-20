@@ -1,0 +1,176 @@
+/*message bar*/
+.mat-snack-bar-container{
+  background: none;
+  box-shadow:none;
+  border-radius:$border-radius-none;
+  padding:0;
+  max-width: 100% !important;
+}
+.DSA_wb_alert {
+  position: relative;
+  margin-bottom: 1rem;
+  border: $border-width-1 solid transparent;
+  border-radius: $border-radius-small;
+  @extend %hover-shadow;
+  padding: 16px 48px 16px 16px;
+  i.icon{
+    float: left;
+  }
+}
+  
+.DSA_wb_alert-success {
+  color: $text-black;
+  background-color: $bg-status-success;
+}
+
+.DSA_wb_alert-danger {
+  color: $text-black;
+  background-color: $bg-status-error;
+}
+.DSA_wb_alert-warning {
+  color: $text-black;
+  background-color: $bg-status-warning;
+}
+.DSA_wb_alert-info {
+  color: $text-black;
+  background-color: $bg-status-informtion;
+}
+.DSA_wb_alert-white {
+  color: $text-black;
+  background-color: $bg-white;
+}
+.DSA_wb_alert-error{
+  color: $text-black;
+  background-color: $bg-status-error;
+}
+.DSA_wb_alert.DSA_wb_alert-success{
+  border: $border-width-1 solid rgba(0, 122, 82, 0.5);
+}
+.DSA_wb_alert.DSA_wb_alert-info{
+  border: $border-width-1 solid rgba(0, 82, 204, 0.5);
+}
+.DSA_wb_alert.DSA_wb_alert-error{
+  border: $border-width-1 solid rgba(204, 41, 0, 0.5);
+}
+.DSA_wb_alert.DSA_wb_alert-warning{
+  border: $border-width-1 solid rgba(255, 136, 0, 0.5);
+}
+.DSA_topbarMessage{
+  margin-top:100px !important;
+}
+.DSA_msgCtr{
+  max-width:800px;
+  margin:0 auto;
+  border-radius: $border-radius-big;
+}
+.DSA_wb_alertfullpage{
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 16px;    
+  border: $border-width-1 solid transparent;
+  vertical-align: bottom;
+  border-radius: $border-radius-big;
+  @extend %default-shadow;
+}
+.DSA_msgWdth{
+  width:500px;
+}
+.DSA_msgWdth2line{
+  width:690px;
+}
+.DSA_msg{
+  float: left;
+}
+.DSA_butttons{
+  margin: 24px 0 0;
+}
+.DSA_bannermsgCtr{
+  margin: 0 0 0 40px;
+  .DSA_wb_mainBodyTxt{
+    margin: 4px 0 0;
+  }
+  .DSA_wb_mainBodyTxt2 {
+    margin: 6px 0 0;
+  }
+}
+.DSA_alertmsgCtr{
+  margin: 0 0 0 32px;
+  .DSA_wb_mainBodyTxt{
+    line-height: 22px;
+  }    
+}
+
+.DSA_wb_alert-withButton{
+  min-width: 450px;
+  position: relative;
+  padding: 16px 170px 16px 16px;
+  .DSA_butttons{
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 16px;
+    margin: 0;
+  }
+}
+/* .DSA_butttons{
+  float:right;
+} 
+.DSA_butttons.marTop{
+  margin: 12px 0 0;
+}*/
+  
+@media screen and (max-width:'768px'){
+  .DSA_wb_alertfullpage{
+    padding: 16px 16px;
+  }
+  .DSA_msgCtr{
+    width:100%;
+    margin:0;
+  }
+  .DSA_wb_alert-withButton{
+    min-width: auto;
+    padding: 16px;
+    .DSA_butttons{
+      position: relative;
+      top: 8px;
+      right: 0;
+    }
+  }
+  .DSA_msgWdth{
+    width:100%;
+  }
+  .DSA_msgWdth2line{
+    width:100%;
+  }
+  .DSA_msg{
+    float: none;
+  }
+  /* .DSA_butttons{
+    float:none;
+    margin-top: 16px;
+  } 
+  .DSA_butttons.marTop{
+    margin: 16px 0 0;
+  }*/
+
+}
+.DSA_wb_alert_inline{
+  font-size: $size-text-14;
+  font-weight: $font-500;
+  line-height: $line-height-24;
+}
+.DSA_wb_alert_inline_info{
+  color: $text-status-informtion;
+}
+.DSA_wb_alert_inline_warning{
+  color: $text-status-warning;
+}
+.DSA_wb_alert_inline_success{
+  color: $text-status-success;
+}
+.DSA_wb_alert_inline_error{
+  color: $text-status-error;
+}
+.DSA_wb_alert-section{
+  box-shadow: none !important;
+}
+/*message bar*/

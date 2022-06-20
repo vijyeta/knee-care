@@ -1,0 +1,258 @@
+/*atom-chip*/
+.DSA_wb_chipStyle{
+    line-height: 14px;
+    max-height:16px;
+    padding:0px 8px;  
+    font-size: $size-text-10;
+    border-radius:12px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: $font-700;
+    i{
+      font-size: 1rem!important;
+      vertical-align: middle;
+    }
+  }
+
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal {
+    background-color: $bg-white;
+    height: 32px;
+    padding: 0px 8px;
+    line-height: 32px;
+    font-size: $size-text-12;
+    border-radius: $border-radius-extrabig;
+    display: inline-block;
+    border: none;
+    color: $text-black;
+    min-height: 32px;
+    @extend %default-shadow;
+  }  
+  
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal,
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big{
+    background-color:transparent;
+    height:32px;
+    padding:0px 16px;
+    line-height: 32px;
+    font-size: $size-text-14;
+    border-radius:$border-radius-large;
+    display: inline-block;
+    border:$border-width-1 solid transparent;
+    color:$text-black;
+    min-height:24px;
+    @extend %chips-shadow;
+    font-weight: $text-regular;
+  }
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big{
+    height:32px;
+    line-height: 32px;
+    min-height:32px;
+  }
+  .mat-chip.mat-standard-chip::after{
+    background-color:$bg-white !important;   
+  }  
+  
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal:hover .icon-close-mini,
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big:hover .icon-close-mini{  
+    color: $text-primary-80;
+  }
+  
+  .mat-chip.mat-standard-chip.active::after{
+    background-color:$bg-primary-60 !important;
+  }
+  a.DSA_wb_chipStyle{
+    text-decoration: none;    
+  }
+  
+  .DSA_wb_closedchip{
+    background:$bg-status-success;
+    color:$text-status-success;
+  
+    i{
+    color:$text-status-success;
+    }
+  }
+
+  .DSA_wb_defaultchip{
+    background: $grey-lightest;
+    color: $grey-light;
+        i{
+          color: $grey-light;
+        }
+  }
+
+  .DSA_wb_activechip{
+    background: $bg-status-success;
+    color: $text-status-success;
+        i{
+          color: $text-status-success;
+        }
+  }
+  .DSA_wb_warningchip{
+    background: $bg-status-warning;
+    color: $text-status-warning-dark;
+        i{
+          color: $text-status-warning-dark;
+        }
+  }
+  .DSA_wb_errorchip{
+    background: $bg-status-error;
+    color: $text-status-error;
+        i{
+          color: $text-status-error;
+        }
+  }
+  .DSA_wb_infochip{
+    background: $bg-status-informtion;
+    color: $text-status-informtion;
+        i{
+          color: $text-status-informtion;
+        }
+  }
+
+  .DSA_wb_inprogresschip{
+    background:$bg-status-warning;
+    color:$text-status-warning;
+    i{
+    color:$text-status-warning;
+    }
+  }
+  .DSA_wb_greychip{
+    background:$bg-neutral-40;
+    color:$text-neutral-80;
+    i{
+    color:$text-neutral-80;
+    }
+  }
+  .DSA_wb_bluechip{
+    background:$bg-status-informtion;
+    color:$text-status-informtion;
+    i{
+    color:$text-status-informtion;
+    }
+  }
+  .DSA_wb_openchip{
+    background:$bg-status-error;
+    color:$text-status-error;
+    i{
+    color:$text-status-error;
+    }
+  }
+  
+  .DSA_wb_finalchip{
+    border:$border-width-1 solid $border-status-informtion;
+    color:$text-status-informtion;
+    i{
+    color:$text-status-informtion;
+    }
+  }
+  .DSA_wb_whitechip{
+    border:$border-width-1 solid $border-white;
+    color:$text-white;
+    i{
+    color:$text-white;
+    }
+  }
+  .DSA_wb_greenchip{
+    background:$bg-white;
+    border:$border-width-1 solid $border-chip;
+    color:$text-status-success;
+    i{
+     color:$text-status-success;
+    }
+  }
+  .DSA_wb_darkBG{
+    background:$bg-primary-80;
+    padding:10px;
+    color:$text-white;
+  }
+  .DSA_wb_selectionIcon{
+    line-height: 1px;
+  }
+  
+  .DSA_wb_selectionIcon.icon-process-complete img{
+    display:none;
+  }
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal.active,
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big.active,
+  .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{
+    background-color:$bg-primary-60;
+    border:$border-width-1 solid transparent;
+    color:$text-primary-80;
+    @extend %chips-shadow;
+    i{
+      color:$text-primary-80;
+    }
+
+    &:hover{
+      background-color:$bg-primary-60;
+    border:$border-width-1 solid transparent;
+    color:$text-primary-80;
+    @extend %chips-shadow;
+    i{
+      color:$text-primary-80;
+    }
+    }
+  }
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal:hover,
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big:hover{
+    @extend %chips-hover-shadow;
+    background: $bg-primary-50;
+    color:$text-primary-80;
+    i{
+      color:$text-primary-80;
+    }
+  }
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal:not(.DSA_wb_chip-input):focus,
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big:not(.DSA_wb_chip-input):focus{
+    @extend %chips-shadow;
+    border:$border-width-1 solid transparent;
+    color:$icon-primary-80;
+    i{
+      color:$icon-primary-80;
+    }  
+  }
+  // .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal.active:hover,
+  // .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big.active:hover,
+  // .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary:hover{
+  //   border:$border-width-1 solid $border-primary-80;
+  //   color: $text-primary-100;
+  //   i{
+  //     color: $text-primary-100;
+  //   }
+  // }
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Normal:not(.DSA_wb_chip-input):active,
+  .mat-chip.mat-standard-chip.DSA_wb_chipStyle-Big:not(.DSA_wb_chip-input):active{
+    background-color: $bg-neutral-40;
+  }
+  
+  /*chip css*/
+  .DSA_wb_chipIconRight{
+    margin-right: -5px !important;
+    margin-left: 5px !important;
+    float: right;
+    margin-top: 8px !important;
+  }
+  .DSA_wb_chipIconLeft{
+    margin-left: -5px !important;
+    margin-right: 5px !important;
+    float: left;
+    margin-top: 8px !important;
+  }
+  
+  .DSA_wb_chipIconRightBig{
+    margin-right: -11px !important;
+    margin-left: 5px !important;
+    float: right;
+    margin-top: 3px !important;
+  }
+  .DSA_wb_chipIconLeftBig{
+    margin-left: -11px !important;
+    margin-right: 10px !important;
+    float: left;
+    margin-top:3px !important;
+  }
+  
+  .DSA_wb_choiseChip{
+    cursor: pointer;
+  }

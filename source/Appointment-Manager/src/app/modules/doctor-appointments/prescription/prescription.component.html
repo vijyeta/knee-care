@@ -1,0 +1,207 @@
+<!-- //patient name, age,  disease, prescription with upload option  -->
+<div class="container-fluid marTB16">
+  <div class="row">
+    <div class="col-md-12 d-flex align-items-center">
+      <div class="mx-3" role="button">
+        <i class="icon x-24 back-icon" (click)="goToPrevPage()"> </i>
+      </div>
+      <h1>Consultation</h1>
+    </div>
+    <div class="col-md-12 marT8">
+      <mat-card class="DSA_wb_card-widget">
+        <mat-card-content>
+          <h4 class="marB16 d-flex align-items-center padB8 border-bottom">
+            <i class="icon x-16 personal-icon nomarL marR8 purple"> </i>
+            Patient Details
+          </h4>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center marTB8">
+              <ngx-avatar
+                [name]="patient.name"
+                [size]="50"
+                [round]="true"
+                class="marL0"
+              ></ngx-avatar>
+            </div>
+            <div class="marL16">
+              <h2 class="DSA_wb_h2Header web-GreyDarkest DSA_wb_text-1line">
+                {{ patient.name }}
+              </h2>
+              <div>
+                <p
+                  class="DSA_wb_mainBodyTxt2 web-GreyLight DSA_wb_text-1line d-block marT4"
+                >
+                  {{ patient.gender }} &nbsp; &bull; &nbsp;
+                  {{ patient.age }} years old
+                </p>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="DSA_wb_card-widget marT8">
+        <mat-card-content>
+          <h4 class="marB16 d-flex align-items-center padB8 border-bottom">
+            <i class="icon x-16 icon-time nomarL marR8 purple"> </i>
+            Consult Time
+          </h4>
+          <div>
+            <h2 class="DSA_wb_h2Header web-GreyDarkest DSA_wb_text-1line">
+              {{ patient.appointmentStartTime | date: "fullDate" }}
+            </h2>
+            <p
+              class="DSA_wb_mainBodyTxt2 web-GreyLight DSA_wb_text-1line d-block marT4"
+            >
+              {{ patient.appointmentStartTime | date: "shortTime" }} -
+              {{ patient.appointmentEndTime | date: "shortTime" }}
+            </p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="DSA_wb_card-widget marT8">
+        <mat-card-content>
+          <h4 class="marB16 d-flex align-items-center padB8 border-bottom">
+            <i class="icon x-16 icon_AwarenessQuiz nomarL marR8 purple"> </i>
+            Patient Complaints
+          </h4>
+          <div class="d-flex align-items-center">
+            <p
+              class="DSA_wb_mainBodyTxt2 web-GreyLight DSA_wb_text-1line d-block marT4"
+            >
+              {{ patient.symptoms }}
+            </p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Previous Appointments card -->
+
+      <mat-card class="DSA_wb_card-widget marT8 col-md-12">
+        <mat-card-content>
+          <h4 class="marB16 d-flex align-items-center padB8 border-bottom">
+            Previous Appointments
+          </h4>
+
+          <div *ngIf="prevAppointments?.length > 0; else noPrevAppointments">
+            <mat-accordion class="DSA_wb-cus-accordion">
+              <ng-container *ngFor="let prevAppointment of prevAppointments">
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header
+                    [collapsedHeight]="'40px'"
+                    [expandedHeight]="'40px'"
+                  >
+                    <mat-panel-title>
+                      {{ prevAppointment.appointmentStartTime | date }}
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="mar16">
+                    <app-previous-treatment
+                      [prevTreatment]="prevAppointment.treatment"
+                    ></app-previous-treatment>
+                  </div>
+                </mat-expansion-panel>
+              </ng-container>
+            </mat-accordion>
+          </div>
+          <ng-template #noPrevAppointments>
+            <p
+              class="DSA_wb_mainBodyTxt2 web-GreyLight DSA_wb_text-1line d-block marT4"
+            >
+              No records found.
+            </p>
+          </ng-template>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="DSA_wb_card-widget marT8 col-md-12">
+        <mat-card-content>
+          <h4 class="marB16 d-flex align-items-center padB8 border-bottom">
+            Treatment
+          </h4>
+          <div *ngIf="patient.appointmentStatus === 'UPCOMING'">
+            <div class="attachments marT8 marB16">
+              <input
+                #fileUpload
+                type="file"
+                multiple
+                hidden
+                (change)="onFileSelected($event)"
+                accept=".jpg,.jpeg,.png"
+              />
+              <button
+                mat-flat-button
+                class="DSA_wb_Icon-btn marB8"
+                (click)="handleAttachFiles()"
+              >
+                <span class="icon_btnCont">
+                  <i aria-hidden="true" class="icon purple x-16 icon-add"></i>
+                </span>
+                <span class="icon-btn-txt">Upload Prescription</span>
+              </button>
+
+              <mat-chip-list>
+                <mat-chip
+                  class="DSA_wb_chipStyle-Normal marR16"
+                  *ngFor="let f of files"
+                >
+                  <a
+                    href="javascript:void();"
+                    class="icon x-16 icon-close-mini DSA_wb_chipIconRight"
+                    (click)="removeFile(f)"
+                    matTooltip="Remove attachment"
+                    matTooltipClass="DSA_tooltip"
+                  ></a>
+                  {{
+                    f.name.length > 25
+                      ? f.name.substring(0, 25) + "..."
+                      : f.name
+                  }}
+                </mat-chip>
+              </mat-chip-list>
+            </div>
+            <h3 class="text-center">OR</h3>
+            <div class="marT16">
+              <mat-form-field
+                class="DSA_Wb_custom-form-field DSA_form_nofloatLabel"
+                floatLabel="never"
+              >
+                <mat-label>Diagnosis</mat-label>
+                <textarea
+                  rows="2"
+                  matInput
+                  formControlName="mainComment"
+                ></textarea>
+              </mat-form-field>
+            </div>
+            <div class="marT8">
+              <mat-form-field
+                class="DSA_Wb_custom-form-field DSA_form_nofloatLabel"
+                floatLabel="never"
+              >
+                <mat-label>Prescription</mat-label>
+                <textarea
+                  rows="12"
+                  matInput
+                  formControlName="mainComment"
+                ></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+          <div *ngIf="patient.appointmentStatus === 'COMPLETED'">
+            <app-previous-treatment
+              [prevTreatment]="patient.treatment"
+            ></app-previous-treatment>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div
+    class="d-flex justify-content-end marT8"
+    *ngIf="patient.appointmentStatus === 'UPCOMING'"
+  >
+    <button class="DSA_wb_miniPrimary-btn" (click)="handleSubmit()">
+      Submit
+    </button>
+  </div>
+</div>

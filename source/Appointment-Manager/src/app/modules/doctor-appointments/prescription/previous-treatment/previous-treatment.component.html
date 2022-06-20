@@ -1,0 +1,15 @@
+<div *ngIf="prevTreatment?.type === 'WRITTEN'">
+  <p>
+    <strong>Diagnosis</strong>:
+    {{ prevTreatment.diagnosis }}
+  </p>
+  <div class="marT8">
+    <p><strong>Prescription</strong>:</p>
+    <p *ngFor="let item of prevTreatment.prescription">
+      {{ item }}
+    </p>
+  </div>
+</div>
+<div *ngIf="prevTreatment?.type === 'SNAPSHOT'">
+  <img [src]="prevTreatment.imageUrl" alt="prescription" class="w-100" />
+</div>

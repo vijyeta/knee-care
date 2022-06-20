@@ -1,0 +1,157 @@
+// custom accordion styles variation3
+.DSA_wb-cus-accordion3 {
+    background: transparent;
+}
+.DSA_wb-cus-accordion3 .mat-expansion-panel{
+    padding:0 8px;
+    position: relative;
+    margin: 0 0 8px!important;
+    border-radius: $border-radius-none !important;
+    box-shadow:  none;  
+    background: transparent;
+    border: none;
+    .DSA_accordionIcon{
+      position: absolute;
+      right:0;
+      top:8px;
+      transform: rotate(90deg);
+    }
+    &:hover{  
+      background: $bg-neutral-40;
+      border-radius: $border-radius-big !important;
+      .DSA_accordionIcon{
+        display: inline-block;
+        margin-bottom:0;
+        transform: rotate(90deg);
+        color: $icon-primary-80;
+      }
+    }
+  
+    .mat-expansion-panel-body{
+      padding:0 0 8px;
+    }
+  
+    .mat-expansion-panel-header {
+      height: 32px !important;
+      padding: 0;       
+      border-radius: $border-radius-none;
+      font-family: $font-style-2;
+      font-size: $size-hd-16;
+      font-weight: $font-600;
+      font-style: normal;  
+      position: relative;
+      .mat-expansion-panel-header-title{
+        color:$text-neutral-90 !important;
+      }  
+      &:hover{
+        background: none !important;   
+        border-bottom: 0;
+        .mat-expansion-panel-header-title{
+          color:$text-primary-80 !important;
+        }  
+      }    
+    }
+}
+  
+.DSA_wb-cus-accordion3 .mat-expansion-panel.mat-expanded{
+    .DSA_accordionIcon{
+      display: inline-block;
+      margin-bottom:0;
+      transform: rotate(270deg);
+      color: $icon-primary-80;
+    }
+    &:hover{
+      box-shadow: none !important;
+      background: none !important; 
+      .DSA_accordionIcon{
+        transform: rotate(270deg);
+      }
+    }
+    
+    .mat-expansion-panel-header {
+      background: none !important;    
+      border-bottom: 0;    
+      .mat-expansion-panel-header-title{
+        color:$text-primary-80 !important;
+      }
+    }
+}
+
+
+.DSA_wb-cus-accordion4 {
+    background: transparent;
+}
+.DSA_wb-cus-accordion4 .mat-expansion-panel{
+    padding:0 8px;
+    position: relative;
+    margin: 0 0 8px!important;
+    border-radius: $border-radius-none !important;
+    box-shadow:  none;  
+    background: transparent;
+    border: none;
+    .DSA_accordionIcon{
+      position: absolute;
+      left:0;
+      top:8px;
+    }
+    &:hover{  
+      background: $bg-neutral-40;
+      border-radius: $border-radius-big !important;
+      .DSA_accordionIcon{
+        display: inline-block;
+        margin-bottom:0;
+        color: $icon-primary-80;
+      }
+    }
+  
+    .mat-expansion-panel-body{
+      padding:0 0 8px;
+    }
+  
+    .mat-expansion-panel-header {
+      height: 32px !important;
+      padding: 0;       
+      border-radius: $border-radius-none;
+      font-family: $font-style-2;
+      font-size: $size-hd-16;
+      font-weight: $font-600;
+      font-style: normal;  
+      position: relative;
+      .mat-expansion-panel-header-title{
+        color:$text-neutral-90 !important;
+      }  
+      &:hover{
+        background: none !important;   
+        border-bottom: 0;
+        .mat-expansion-panel-header-title{
+          color:$text-primary-80 !important;
+        }  
+      }    
+    }
+    .mat-expansion-panel-header-title{
+        padding-left:20px;
+      }
+}
+  
+.DSA_wb-cus-accordion4 .mat-expansion-panel.mat-expanded{
+    .DSA_accordionIcon{
+      display: inline-block;
+      margin-bottom:0;
+      transform: rotate(90deg);
+      color: $icon-primary-80;
+    }
+    &:hover{
+      box-shadow: none !important;
+      background: none !important; 
+      .DSA_accordionIcon{
+      }
+    }
+    
+    .mat-expansion-panel-header {
+      background: none !important;    
+      border-bottom: 0;    
+      .mat-expansion-panel-header-title{
+        color:$text-primary-80 !important;
+      }
+    }
+}

@@ -1,0 +1,143 @@
+/*Start of Widget*/
+.DSA_WidgetCtr{
+    background: none;
+    margin:0 -16px;
+}
+.DSA_WidgetCtr .DSA_WidgetContent{
+    background: $text-white;
+    border-radius: $border-radius-extrabig;
+    @extend %default-shadow;  
+}
+.grid-stack>.grid-stack-item>.grid-stack-item-content.DSA_WidgetContent{
+    left:16px;
+    right:16px;
+    bottom:16px;
+}
+.DSA_WidgetCtr .DSA_WidgetContent .ui-draggable-dragging,.DSA_WidgetCtr .DSA_WidgetContent:hover{
+    box-shadow: none;
+    @extend %hover-shadow;
+}
+.DSA_WidgetCtr .DSA_WidgetContent .DSA_Widgetheader{
+    height:60px;   
+    padding:24px 24px 0px 24px;
+    font-weight: bold;
+    font-size: 1.8rem;    
+    cursor: move;
+    border-top-left-radius: $border-radius-extrabig;
+    border-top-right-radius: $border-radius-extrabig;
+    z-index: 5;
+}
+.DSA_WidgetCtr .DSA_WidgetCtritem .DSA_isdraggable:hover::after{
+    display: inline-block;
+}
+.DSA_WidgetCtr .DSA_WidgetCtritem .DSA_isdraggable:hover{
+    background-color: $bg-neutral-40;  
+}
+.DSA_widgetCtr{
+    padding: 24px;
+}
+.DSA_Widgetplaceholder{
+    border: 1px dashed $bg-neutral-80;
+    background: $bg-neutral-40;
+    border-radius: $border-radius-16;
+} 
+.DSA_customList{
+    li{    
+        margin: 0 0 8px;  
+        a{
+            display: block;
+            padding: 8px;             
+        }
+    }
+}
+.DSA_customList.marL110{
+    margin: 0 0 0 110px;
+}
+.DSA_graphCont{
+    img{
+        margin: 30px 0 0;
+    }
+    img.graph_lg{
+        width: auto;
+    }
+}
+@media screen and (min-width:1367px){
+    .DSA_graphCont{
+        img.graph_lg{
+            width: 35%;
+        }
+    }
+    .DSA_customList.marL110{
+        margin: 20px 0 0 16px;
+        float: left;
+    }
+}
+@media screen and (min-width:1600px){  
+    .DSA_graphCont{
+        img.graph_lg{
+            width: 28%;
+            margin: 20px 0 0;
+        }
+    }
+    .DSA_customList.marL110{
+        margin: 20px 0 0 40px;
+        float: left;
+    }
+}
+.DSA_widgetFooter{
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    @extend %footer-shadow;
+}
+.DSA_WidgetCtr .gridster-preview {    
+    border-radius: $border-radius-extrabig;
+} 
+.img_alignCenter{
+    margin: 36px 0 0;
+}
+.DSA_imgCont{
+    float: right;
+}
+@media screen and (min-width:1200px) and (max-width:1350px){
+    .DSA_imgCont{
+        float: left;
+        clear: both;
+    }
+    .img_alignCenter{
+        margin: 16px 0 0;
+    }
+}
+.DSA_wb_list_avatars{
+    li{
+        margin: 0 16px 0 0;
+        float: left;
+        a{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+        a.greyIcon-Circle{
+            div{
+                vertical-align: middle;
+                display: inline-block;
+            }
+        }
+    }
+}
+.DSA_customList li a:hover{
+    background:  $bg-primary-50;
+    border-radius: $border-radius-small;
+    @extend %default-shadow; 
+}
+  
+.DSA_draggable{
+    background:$border-neutral-40;
+    border:1px solid $bg-neutral-80;
+    border-radius: $border-radius-extrabig;  
+}    
+/*End  of Widget*/
