@@ -1,0 +1,29 @@
+/* Custom Table - Start */
+@import "web-table-common.scss";
+@import "web-table-expandcollapse.scss";
+@import "web-table-editable.scss";
+@import "web-table-compare.scss";
+
+.table-titleArea{
+  margin: 0 0 16px;
+  h2{
+    line-height: 32px;
+  }
+  .icon-cont{
+    float: right;
+    border-radius: $border-radius-small;
+    background: $bg-white;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    &:hover{
+      color: $text-primary-80;
+      background-color: $bg-neutral-40;
+    }
+    i{
+      display: inline-block;
+      margin: 4px 0;
+    }
+  }
+}
+/* Custom Table - End */

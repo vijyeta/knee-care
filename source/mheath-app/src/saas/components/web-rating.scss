@@ -1,0 +1,18 @@
+/* Rating - Start */
+.DSA_starIcons_ul{
+    list-style: none;
+    li{
+        margin-right: 16px;
+        float: left;
+        a{
+            width: 24px;
+            height: 24px;
+            display: block;
+            cursor: pointer;
+            .yellow{
+                color: $text-status-warning;
+            }
+        }    
+    }  
+}
+/* Rating - End */

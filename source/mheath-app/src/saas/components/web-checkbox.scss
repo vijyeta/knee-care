@@ -1,0 +1,116 @@
+/* Checkbox CSS - Start */
+.DSA_Wb_custom-checkbox:not(.d-block) ~ .DSA_Wb_custom-checkbox:not(.d-block){
+  margin: 0 0 0 16px;
+}
+.DSA_Wb_custom-checkbox.d-block ~ .DSA_Wb_custom-checkbox.d-block{
+  margin: 8px 0 0;
+}
+.DSA_Wb_custom-checkbox .mat-checkbox-background, 
+.DSA_Wb_custom-checkbox .mat-checkbox-frame{    
+  border-color: $border-neutral-80;
+  border-radius: $border-radius-small;
+  z-index: 1;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled .mat-checkbox-background, 
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled .mat-checkbox-frame{
+  border: none;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked.mat-accent .mat-checkbox-background, 
+.DSA_Wb_custom-checkbox.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+  background: $bg-primary-80;
+  border: none;
+}
+.DSA_Wb_custom-checkbox .mat-checkbox-checkmark-path{
+  opacity: 1;
+  stroke: $bg-neutral-50 !important;
+  stroke-dashoffset: 2;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked .mat-checkbox-checkmark-path{
+  stroke: $bg-white !important;
+  stroke-dashoffset: 2;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background, 
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled.mat-checkbox-indeterminate .mat-checkbox-background{
+  background: $bg-primary-60;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-checkmark-path{
+  stroke: $bg-neutral-40 !important;
+}
+
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled:not(.mat-checkbox-checked) .mat-checkbox-frame {
+  border: $border-width-2 solid $border-neutral-50;
+}
+.DSA_Wb_custom-checkbox .mat-checkbox-checkmark{
+  fill: $bg-neutral-40;
+  left: 1px;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox .mat-checkbox-ripple{
+  width: 24px;
+  height: 24px;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+}
+.DSA_Wb_custom-checkbox.mat-checkbox .mat-checkbox-ripple .mat-ripple-element{
+  border-radius: $border-radius-small;  
+}
+.DSA_Wb_custom-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-inner-container:hover .mat-checkbox-frame{
+  border-color: $bg-primary-80;
+}
+.DSA_Wb_custom-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-inner-container:focus .mat-checkbox-frame{
+  border-color: $bg-primary-100;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element{
+  background-color: $bg-primary-60;
+} 
+.DSA_Wb_custom-checkbox.mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent{
+
+  .mat-ripple-element{
+    background-color: $bg-neutral-50;
+    opacity: 1;
+  }
+  .mat-checkbox-frame{
+    border-color: $border-primary-100;
+  }
+  .mat-checkbox-checkmark-path{
+    stroke: $border-primary-100 !important;
+  }
+} 
+.DSA_Wb_custom-checkbox.mat-checkbox.mat-checkbox-checked:active:not(.mat-checkbox-disabled).mat-accent{
+
+  .mat-ripple-element{
+    background-color: $bg-primary-60;
+    opacity: 1;
+  }
+  .mat-checkbox-checkmark-path{
+    stroke: $bg-white !important;
+  }
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-inner-container:hover .mat-ripple-element{
+  opacity: 1;
+  background: $bg-primary-50;
+}
+.DSA_Wb_custom-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-inner-container:hover .mat-ripple-element{
+  opacity: 1;
+  background: $bg-neutral-40;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked:active:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-background{
+  background: $bg-primary-100;
+  border: none;
+}
+.DSA_Wb_custom-checkbox .mat-checkbox-layout{
+  margin: 0;
+}
+.DSA_Wb_custom-checkbox .mat-checkbox-layout .mat-checkbox-label{
+  color: $text-neutral-80;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-disabled .mat-checkbox-layout .mat-checkbox-label{
+  color: $text-neutral-50;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked .mat-checkbox-layout .mat-checkbox-label{
+  color: $text-black;
+}
+.DSA_Wb_custom-checkbox.mat-checkbox-checked.mat-checkbox-disabled .mat-checkbox-layout .mat-checkbox-label{
+  color: $text-black;
+}
+
+/* Checkbox CSS - End */

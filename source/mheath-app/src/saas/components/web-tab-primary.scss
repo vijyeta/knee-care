@@ -1,0 +1,38 @@
+.DSA_wb_Primary .mat-tab-label,
+.DSA_wb_Primary .mat-tab-link{
+    height:56px;
+    font-family: $font-style-2;
+}
+.DSA_wb_Primary .mat-tab-label:hover,
+.DSA_wb_Primary .mat-tab-link:hover{
+    background: $bg-neutral-40;
+    border-radius:$border-radius-big;
+}
+.DSA_wb_Primary .mat-tab-label:active,
+.DSA_wb_Primary .mat-tab-link:active{
+    background: $bg-primary-60;
+}
+.DSA_wb_Primary .mat-tab-label-active,
+.DSA_wb_Primary .mat-tab-label-active:hover{
+    background: $bg-primary-80;
+    color:$text-white;  
+}
+.DSA_wb_Primary .mat-tab-label-active:active{
+    font-weight: $font-600;  
+}
+.DSA_wb_Primary .mat-tab-group.mat-primary .mat-ink-bar,
+.DSA_wb_Primary .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    height:2px;
+    display: none;
+}
+.DSA_wb_Primary .mat-tab-group.mat-primary :not(.mat-tab-disabled).mat-tab-label.cdk-keyboard-focused,
+.DSA_wb_Primary .mat-tab-group.mat-primary :not(.mat-tab-disabled).mat-tab-label.cdk-program-focused,
+.DSA_wb_Primary .mat-tab-group.mat-primary :not(.mat-tab-disabled).mat-tab-link.cdk-keyboard-focused,
+.DSA_wb_Primary .mat-tab-group.mat-primary :not(.mat-tab-disabled).mat-tab-link.cdk-program-focused,
+.DSA_wb_Primary .mat-tab-nav-bar.mat-primary :not(.mat-tab-disabled).mat-tab-label.cdk-keyboard-focused,
+.DSA_wb_Primary .mat-tab-nav-bar.mat-primary :not(.mat-tab-disabled).mat-tab-label.cdk-program-focused,
+.DSA_wb_Primary .mat-tab-nav-bar.mat-primary :not(.mat-tab-disabled).mat-tab-link.cdk-keyboard-focused,
+.DSA_wb_Primary .mat-tab-nav-bar.mat-primary :not(.mat-tab-disabled).mat-tab-link.cdk-program-focused{ 
+    background: $bg-primary-80!important;
+    color:$text-white!important
+}

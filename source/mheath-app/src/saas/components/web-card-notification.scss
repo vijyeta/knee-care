@@ -1,0 +1,42 @@
+.DSA_wb_Smallcard-widget.mat-card{
+    padding: 16px;
+}
+.DSA_wb_Smallcard-widget.mat-card .mat-card-actions{
+    margin:24px -16px;
+}
+.DSA_wb_card-widget-02.DSA_wb_notificationCard{
+    .mat-card-actions{
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    .text-animate{
+        text-align: right;     
+        .icon-delete{
+            transition: all 0.2s ease 0.2s;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    &:hover{
+        .text-animate{     
+            .icon-delete{
+                display: inline-block;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.DSA_selectionCard .DSA_selectedIcon{
+    display: none;  
+}
+.DSA_selectionCard .DSA_unselectedIcon{
+    display: inline-block;  
+}
+.DSA_selectionCard.DSA_active .DSA_selectedIcon{
+    display: inline-block;  
+}
+.DSA_selectionCard.DSA_active .DSA_unselectedIcon{
+    display: none;  
+}

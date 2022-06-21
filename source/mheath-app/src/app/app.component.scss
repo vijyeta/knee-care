@@ -1,0 +1,92 @@
+/* App level CSS */
+.icon_save,
+.delete-sm-icon {
+  color: #8626c3;
+  cursor: pointer;
+}
+::ng-deep .delete-sm-icon {
+  vertical-align: middle !important;
+}
+.icon-add {
+  color: #8626c3;
+  cursor: pointer;
+}
+.mat-standard-chip {
+  width: 90px;
+  border-radius: 4px;
+}
+.col-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+::ng-deep .mat-chip-list-wrapper .mat-standard-chip {
+  margin: 10px !important;
+}
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: #8626c3;
+  border: 1px solid transparent;
+  color: #edcfff;
+}
+.mat-chip.mat-standard-chip.mat-primary {
+  background-color: #edcfff;
+  border: 1px solid transparent;
+  color: #8626c3;
+}
+::ng-deep .mat-tab-list {
+  justify-content: center !important;
+  display: flex;
+}
+.square-available {
+  height: 15px;
+  width: 30px;
+  display: block;
+  background-color: #8626c3;
+  margin-right: 10px;
+}
+.square-unavailable {
+  height: 15px;
+  width: 30px;
+  display: block;
+  background-color: #edcfff;
+  margin-right: 10px;
+}
+.legend {
+  margin-top: 20px;
+  white-space: nowrap;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+.calendar-icon {
+  float: right;
+}
+// .success-snackbar {
+//   font-size: larger;
+//   color: $text-black;
+//   background-color: $bg-status-success;
+//   border: $border-width-1 solid rgba(0, 122, 82, 0.5);
+//   max-width: 800px;
+//   margin: 0 auto;
+//   border-radius: $border-radius-big;
+// }
+
+// .success-snackbar .mat-simple-snackbar-action {
+//   color: $text-black;
+// }
+
+// .error-snackbar {
+//   font-size: larger;
+//   color: $text-black;
+//   background-color: $bg-status-error;
+//   border: $border-width-1 solid rgba(204, 41, 0, 0.5);
+//   max-width: 800px;
+//   margin: 0 auto;
+//   border-radius: $border-radius-big;
+// }
+
+// .error-snackbar .mat-simple-snackbar-action {
+//   color: $text-black;
+// }

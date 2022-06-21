@@ -1,0 +1,15 @@
+.DSA_Wb_form-sm-cont{
+    .mat-form-field-appearance-legacy .mat-form-field-wrapper{
+      padding: 0;
+    }
+    .mat-form-field-subscript-wrapper, .mat-form-field-label-wrapper{
+      display: none;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-underline{
+      bottom: 0;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-infix{
+      padding: 0;
+      border: none;
+    } 
+}

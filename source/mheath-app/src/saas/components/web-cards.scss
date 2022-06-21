@@ -1,0 +1,127 @@
+/* Custom Cards - Start */
+@import "web-card-common.scss";
+@import "web-card-mini.scss";
+@import "web-card-choice.scss";
+@import "web-card-choice-list.scss";
+@import "web-card-list.scss";
+@import "web-card-media.scss";
+@import "web-card-media-primarybg.scss";
+@import "web-card-media-greybg.scss";
+@import "web-card-notification.scss";
+
+/* .DSA_card-image-bg{    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: $border-radius-small;
+}
+.DSA_card-image-bg img{
+    width: 100%;
+    height: 100%;
+} 
+.DSA_wb_card-widget.DSA_wb_actionCardSingleline{
+    max-width:none;
+}
+.mat-card-image.custom-card-image-bg{
+    margin-bottom: -16px;
+}*/
+/*.DSA_wb_card-widget ~ .DSA_wb_card-widget{
+    margin: 0 0 0 32px;
+}*/
+
+/*.DSA_txt-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top:0;
+    left: 0;
+    border-radius: $border-radius-small;
+    z-index: 1;
+}
+ .DSA_txt_top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    hr{      
+        opacity:0.5;
+    }
+}
+.DSA_txt_top > .mat-card-actions:last-child {
+    margin-bottom: -8px;
+    padding-bottom: 0;
+}   
+.DSA_wb_card-widget.DSA_card-withLtImg .DSA_txt_top .DSA_txt_left{
+    padding-left: 72px;
+    min-height: 56px;
+}
+.DSA_card-withRtImg .DSA_txt_left{
+    margin-right:106px;
+}
+.DSA_card-withRtImg .DSA_txt_left.txt-withAvatar{
+    margin-right: 96px;
+}
+.DSA_card-withRtImg .img-cont{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.DSA_card-withRtImg.card-lg .img_leader{
+    margin: 12px 0 0;
+}
+.DSA_card-withRtImg .card-avatar{
+    margin: -4px 0 0;
+}  
+.DSA_card-withLtImg .img-cont{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.DSA_wb_card-widget.DSA_card-withRtImg, .DSA_wb_card-widget.card-withTxt,.DSA_wb_card-widget.DSA_card-withLtImg{
+    min-height: 106px;
+}  
+.DSA_wb_card-widget.DSA_card-withRtImg.card-lg,.DSA_wb_card-widget.DSA_card-withLtImg.card-lg{
+    min-height: 136px;
+    max-height: 136px;
+}
+.DSA_wb_card-widget.DSA_card-withLtImg .DSA_txt_left{
+    padding-left: 120px;
+}
+.DSA_card-ul{
+    list-style: none;
+    padding: 0;
+    li{
+        padding: 8px 0;      
+    }
+    li:last-child{
+        padding: 8px 0 0;
+    }
+    li.DSA_border-top{
+        border-top: 1px solid $bg-neutral-40 !important;
+    }
+}  
+.DSA_card-fixed{
+    max-width: 156px;
+    min-width: 156px;
+    height: 156px;
+    float: left;
+    .align-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.DSA_wb_card-widget.DSA_card-nobg{
+    background: transparent;
+    box-shadow: none !important;
+    padding: 0;
+}
+.DSA_wb_card-widget.mat-card.dark > .mat-card-actions:last-child{
+    margin: 0;
+    padding: 0;
+}*/
+/* Custom Cards - End */

@@ -1,0 +1,301 @@
+/* Buttons - Start */
+.DSA_wb_primary{
+    @include btn-styles-web;
+    
+      &-btn{
+        @extend .DSA_wb_primary;
+        background: $bg-black;
+        color:$text-white;
+        border-radius: $border-radius-big !important;
+        border:$border-width-1 solid $border-black !important;
+          &:hover{
+            @extend %hover-shadow;
+            background: $bg-primary-80;
+            border:$border-width-1 solid transparent!important;
+          }
+          /* &:active{
+            @extend %active-shadow;
+            background: $bg-neutral-50;          
+          } */
+          &:focus{
+            outline: none !important;
+            background: $bg-primary-100;
+            border:$border-width-1 solid transparent!important;
+            box-shadow:none !important;
+          }
+          &:disabled,&:disabled:active,&:disabled:hover{
+            box-shadow:none !important;
+            background: $bg-neutral-50;  
+            color:$text-white !important;
+            border:$border-width-1 solid $border-neutral-50 !important;
+          }
+      }
+  }
+  .DSA_wb_secondary-btn{
+    @extend .DSA_wb_primary;
+    color:$text-black;
+    border:$border-width-1 solid $border-black !important;  
+    border-radius: $border-radius-big !important;        
+      &:hover{
+        @extend %hover-shadow;
+        border:$border-width-1 solid $border-primary-80!important;
+      }
+      /* &:active{
+        @extend %active-shadow;
+        background: $bg-neutral-40;
+        border:$border-width-1 solid $border-neutral-80 !important; 
+      } */
+      &:focus{
+        outline: none !important;
+        box-shadow:none !important;
+        background: $bg-neutral-40;
+        border:$border-width-1 solid $border-primary-100 !important;
+      }
+      &:disabled{    
+        border:$border-width-1 solid $border-neutral-50 !important;    
+        background: $bg-neutral-30 !important;
+      }
+      &:disabled, &:disabled:active, &:disabled:hover{
+        box-shadow:none !important;
+        color: $text-neutral-50 !important;
+      }
+  }
+  
+  .DSA_wb_innerPrimary{
+    @include innerBtn-styles-web;
+    
+      &-btn{
+        @extend .DSA_wb_innerPrimary;
+        background: $bg-primary-60;
+        color:$text-primary-80;      
+        border:$border-width-1 solid $border-primary-60 !important;
+          &:hover{
+            @extend %hover-shadow;        
+          }
+          &:active{
+            @extend %active-shadow;
+          }
+          &:focus{
+            outline: none !important;
+          }        
+      }
+  }
+  .DSA_wb_innerSecondary-btn{
+    @extend .DSA_wb_innerPrimary;
+    color: $text-primary-80;
+    border:$border-width-1 solid $border-primary-60 !important;    
+    font-weight: $font-400;
+      &:hover{
+        @extend %hover-shadow;      
+      }
+      &:active{
+        @extend %active-shadow;     
+      }
+      &:focus{
+        outline: none !important;
+      }    
+  }
+  .DSA_wb_Icon-btn{
+    @extend .DSA_wb_innerPrimary;
+    
+    font-family: $font-style-1; 
+    border-radius: $border-radius-small!important;
+    line-height: 16px !important;
+    padding: 4px 8px 4px 0!important;
+    font-weight: $font-400;
+    /* background-color: $bg-white;
+    @extend %icon-text-btn-shadow; */
+    color: $text-black;
+    
+    span.icon_btnCont{
+      padding: 4px 8px;
+      background-position: center center;
+      display: inline-block;
+      vertical-align: middle;      
+    }
+    &:hover{      
+      color: $text-primary-80;
+      background-color: $bg-neutral-40;
+      /* @extend %hover-shadow; */
+    }    
+    &:focus{
+      outline: none !important;
+      box-shadow: none!important;
+      background-color: $bg-neutral-50;
+      color: $text-primary-100;
+      .icon.purple{
+        color: $icon-primary-100;
+      }
+    }
+  }
+  
+  .DSA_wb_text-btn{
+    @extend .DSA_wb_primary; 
+    color: $text-primary-80;
+    line-height: 16px !important;
+    font-size: $size-button-16;
+    background: none;
+    min-width: auto !important;
+    padding: 8px 16px !important;
+      &.mat-flat-button{
+        border-radius:$border-radius-none !important;
+      }
+      &:hover{
+        background:  $bg-primary-50;
+        border-radius: $border-radius-big !important;
+      }
+      &:active{   
+        background: $bg-primary-60;
+      }    
+      &:focus{
+        outline: none !important;
+        background:  $bg-primary-60;
+        border-radius: $border-radius-big !important;
+      }   
+      &:disabled, &:disabled:active, &:disabled:hover{
+        box-shadow:none !important;
+        color: $text-neutral-50 !important; 
+        background: transparent !important;
+        border-radius: none !important; 
+      }
+    }
+    
+  
+  .DSA_wb_miniPrimary{
+    @include miniBtn-styles-web;
+    &-btn{
+      @extend .DSA_wb_miniPrimary;
+      background: $bg-black;
+      border: $border-width-1 solid $border-black !important; 
+      color:$text-white;  
+      outline: none!important; 
+      &:hover{
+        @extend %hover-shadow;
+        background: $bg-primary-80;
+        border: $border-width-1 solid $border-primary-80 !important;
+      }
+      &:focus{
+        box-shadow: none !important;
+        background: $bg-primary-100;
+        border: $border-width-1 solid $border-primary-100 !important;
+      }  
+      &:disabled{
+        background: $bg-neutral-50;
+        border: $border-width-1 solid $border-neutral-50 !important;
+      }
+      &:disabled,&:disabled:active,&:disabled:hover{
+        color: $text-white!important;      
+        box-shadow: none !important;
+        cursor: default;
+      }
+    }
+  }
+  
+  .DSA_wb_miniSecondary{
+    @include miniBtn-styles-web;
+    &-btn{
+      @extend .DSA_wb_miniPrimary;
+      outline: none!important;
+      color: $text-black;
+      border: $border-width-1 solid $border-black!important;
+      &:hover{
+        @extend %hover-shadow;
+        border: $border-width-1 solid $border-primary-80!important;      
+      }
+      &:focus{
+        box-shadow: none !important;
+        background: $bg-neutral-40;
+        border: $border-width-1 solid  $border-primary-100!important;
+      }
+      &:disabled{
+        background: $bg-neutral-30 !important;
+        border: $border-width-1 solid $border-neutral-50!important;
+      }
+      &:disabled,&:disabled:active,&:disabled:hover{
+        color: $text-neutral-50 !important;
+        box-shadow: none !important;
+        cursor: default;
+      }
+    }
+   
+    
+  }
+  
+  .DSA_wb_miniWhite{
+    color:  $text-white!important;
+    border: $border-width-1 solid  $border-white!important;
+    &:hover{
+      @extend %hover-shadow;
+      background: $bg-white;
+      border: $border-width-1 solid $border-white!important;
+      color:  $text-black!important;      
+    }
+    &:focus{
+      box-shadow: none !important;
+      background: $bg-neutral-40;
+      border: $border-width-1 solid  $border-neutral-40!important;
+      color:  $text-black!important;  
+    }
+    &:disabled{
+      background: transparent !important;
+      border: $border-width-1 solid rgba(255, 255, 255, 0.3)!important;
+    }
+    &:disabled,&:disabled:active,&:disabled:hover{
+      color: rgba(255, 255, 255, 0.3)!important;
+      box-shadow: none !important;
+      cursor: default;
+    }
+  }
+  
+  a.DSA_wb_hyperLink-btn{
+    font-family: $font-style-1; 
+    font-weight: 400;
+    font-style: normal;
+    color: $text-primary-80;
+    font-size: $size-button-14;
+    background: none;  
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: underline !important;
+      color: $text-primary-70;
+    }
+    &:focus{
+      background: none!important;
+      color: $text-primary-100;
+      outline: none;
+    }
+  }
+  
+  
+  .DSA_wb_fabButton{
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    border-radius: $border-radius-circle;
+    text-align: center;
+    vertical-align: middle;
+   
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    border:none;
+    line-height: 56px;
+    background-color: $bg-primary-80;
+    @extend %default-shadow;
+  
+    &:hover{
+      @extend %hover-shadow;    
+      background: $bg-primary-80;
+    }
+  
+    &:active, &:focus{
+      background: $bg-primary-100;
+      @extend %default-shadow;
+      outline: none;
+    }
+  }
+  .DSA_width100{
+    width:100%;
+  }
+  /* Buttons - End */

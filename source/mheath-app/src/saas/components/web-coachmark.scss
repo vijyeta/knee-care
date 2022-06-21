@@ -1,0 +1,50 @@
+/*start of coachmark*/
+.joyride-backdrop{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.joyride-step__container{
+    border-radius: $border-radius-extrabig;
+    padding:0 !important;
+    @extend %hover-shadow;
+}
+.joyride-step__header{
+    padding:24px 24px 12px 24px  !important;
+}
+.joyride-step__body{
+    padding:16px 24px 24px 24px !important;
+}
+.joyride-step__footer{  
+    padding:8px 24px !important;
+    @extend %footer-shadow;
+    position: relative;
+}    
+.joyride-step__counter{
+    font-size: $size-text-12 !important;
+    font-weight: $font-400 !important;
+    font-family: $font-style-1 !important;
+    font-style: normal;
+    color:$text-neutral-80;
+    margin-left: 22px;
+    margin-top: 2px;
+}
+.joyride-step__close{
+    width:30px !important;
+    top:20px !important;
+}
+.joyride-step__close svg{
+    display: none;
+}
+.joyride-step__close::after{
+    content:'Skip';
+    font-size: $size-text-12;
+    font-weight: $font-400;
+    font-family: $font-style-1 !important;
+    font-style: normal;
+    color:$text-neutral-80;
+}  
+.joyride-step__prev-container{
+    position: absolute;
+    left:22px;
+    top:18px;
+}  
+/*end of coachmark*/

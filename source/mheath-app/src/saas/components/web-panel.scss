@@ -1,0 +1,95 @@
+.DSA_panel{
+    @extend %default-mini-shadow;
+    border-radius: $border-radius-extrabig;
+    background: $bg-white;
+    min-height: 100px;
+}
+.DSA_panelhover:hover{
+    @extend %hover-shadow;
+}
+.DSA_panelBody{
+    min-height: 100px;
+}
+.DSA_panelFooter{
+    @extend %footer-shadow;
+}
+.DSA_panelrounded{
+    border-radius: $border-radius-extrabig;
+}
+.DSA_panelBG{
+    border-radius: $border-radius-extrabig;
+}
+.DSA_panelBGBody{
+    border-radius: $border-radius-extrabig;
+    background:  #FFD4C0 url('../../assets/images/panel-pinkBg.png') no-repeat top left;
+}
+.DSA_panelBGBodyBottom{
+    background: url('../../assets/images/panel-pinkBgBottom.png') no-repeat bottom left;
+}
+.DSA_panelBGBodyRight{
+    min-height: 236px;
+    background: url('../../assets/images/panel-pinkBgRight.png') no-repeat top right;
+}
+.DSA_panelBG-purpleBody{
+    border-radius: $border-radius-extrabig;
+    background:  #ECDAFD url('../../assets/images/panel-purpleBg.png') no-repeat top left;
+}
+.DSA_panelBG-purpleBodyBottom{
+    background: url('../../assets/images/panel-purpleBgBottom.png') no-repeat bottom left;
+}
+.DSA_panelBG-purpleBodyRight{
+    min-height: 267px;
+    background:url('../../assets/images/panel-purpleBgRight.png') no-repeat top right;
+}
+
+.DSA_panelGreenBG{
+    background:$bg-status-success;
+}
+.DSA_panelNoBG{
+    background:none;
+}
+
+.DSA_panelGreyBG{
+    background:$bg-neutral-40;
+    min-height: auto;
+    .DSA_panelBody{
+        min-height: auto;
+    }
+}
+.DSA_panel-expandCollapse{
+    min-height: auto;
+    .DSA_panelBody{
+        min-height: auto;
+    }
+    .DSA_panel-content{
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
+    .DSA_panel_header .DSA_wb_h2Header{
+        line-height: 24px;
+    }
+    .DSA_Wb_custom-slideToggle.mat-slide-toggle{
+        margin: 0;
+        .mat-slide-toggle-content{
+            margin: 0 0 0 16px;
+        }
+    }
+}
+.DSA_innerPanel{
+    border-radius: $border-radius-big;
+    box-shadow: none !important;
+    border: $border-width-1 solid $border-neutral-50;
+    .DSA_panelFooter{
+        border-top: $border-width-1 solid $border-neutral-50;
+        box-shadow: none !important;
+    }
+}
+
+.DSA_panelHtAuto{
+    min-height: auto;
+    .DSA_panelBody{
+        min-height: auto;
+    }
+}

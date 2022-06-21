@@ -1,0 +1,179 @@
+<div *ngIf="!manage">
+  <div class="row mt-5">
+    <div class="col-md-12 d-flex align-items-center">
+      <div class="mx-3" role="button">
+        <i class="icon x-24 back-icon mx-3" (click)="back()"> </i>
+      </div>
+      <h2 class="DSA_wb_h2Header text__no-hover mx-3">Set Availability</h2>
+    </div>
+  </div>
+  <div class="mt-5 mr-3 ml-3" *ngFor="let day of daysOfTheWeek">
+    <mat-accordion class="DSA_wb-cus-accordion3">
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header
+          [collapsedHeight]="'32px'"
+          [expandedHeight]="'32px'"
+        >
+          <mat-panel-title>
+            <i
+              aria-hidden="true"
+              class="icon iconinline x-16 next-icon DSA_accordionIcon"
+            >
+            </i>
+            {{ day }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <form [formGroup]="availabilityForm">
+          <div class="row mt-5">
+            <div class="col-5">
+              <div
+                formArrayName="from"
+                *ngFor="
+                  let element of availabilityForm.controls.from?.value;
+                  let j = index;
+                  trackBy: trackByFn
+                "
+              >
+                <div [formGroupName]="j">
+                  <mat-form-field
+                    class="DSA_Wb_custom-form-field DSA_form_nofloatLabel"
+                    floatLabel="never"
+                  >
+                    <mat-label>From</mat-label>
+                    <mat-select
+                      disableOptionCentering
+                      panelClass="DSA_wb-custom-select-panel"
+                      class="DSA_wb-custom-select"
+                      formControlName="from"
+                    >
+                      <mat-option *ngFor="let slot of slots" [value]="slot">
+                        {{ slot.viewValue }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div
+                formArrayName="till"
+                *ngFor="
+                  let element of availabilityForm.controls.till?.value;
+                  let j = index;
+                  trackBy: trackByFn
+                "
+              >
+                <div [formGroupName]="j">
+                  <mat-form-field
+                    class="DSA_Wb_custom-form-field DSA_form_nofloatLabel"
+                    floatLabel="never"
+                  >
+                    <mat-label>Till</mat-label>
+                    <mat-select
+                      disableOptionCentering
+                      panelClass="DSA_wb-custom-select-panel"
+                      formControlName="till"
+                      class="DSA_wb-custom-select"
+                    >
+                      <mat-option *ngFor="let slot of slots" [value]="slot">
+                        {{ slot.viewValue }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="col-1">
+              <div
+                *ngFor="let element of availabilityForm.controls.from?.value; let j = index;"
+              >
+                <i class="icon x-24 delete-sm-icon" (click)="delete(j)"> </i>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-6 mb-3">
+            <button mat-flat-button class="DSA_wb_Icon-btn">
+              <span class="icon_btnCont">
+                <i class="icon purple x-16 icon-add"></i>
+              </span>
+              <span class="icon-btn-txt">Add</span>
+            </button>
+          </div>
+          <div class="col-6 mb-3">
+            <button mat-flat-button class="DSA_wb_Icon-btn">
+              <span class="icon_btnCont">
+                <i class="icon purple x-16 icon_save"></i>
+              </span>
+              <span class="icon-btn-txt" (click)="save()">Save Changes</span>
+            </button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
+<div *ngIf="manage">
+  <div class="row mt-5">
+    <div class="col-10">
+      <h2 class="DSA_wb_h2Header text__no-hover">Manage Availability</h2>
+    </div>
+    <div class="col-2">
+      <i class="icon x-24 calendar-icon" (click)="calendarClick()"> </i>
+    </div>
+  </div>
+  <div class="DSA_wb_customTab DSA_navTabWhite DSA_wb_Secondary mt-5">
+    <mat-tab-group disableRipple>
+      <mat-tab>
+        <ng-template mat-tab-label> Today </ng-template>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label> Tomorrow </ng-template>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ dayAfterTomorrow }}
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div class="mt-5 mr-3 ml-5">
+    <div class="">
+      <mat-slide-toggle
+        class="DSA_Wb_custom-slideToggle"
+        disableRipple="true"
+        [checked]="checked"
+        labelPosition="before"
+        (change)="changed()"
+        >{{ availableOrUnavailable }}</mat-slide-toggle
+      >
+      <div *ngIf="checked" class="legend">
+        <span class="square-available"></span>
+        <h4>Available</h4>
+      </div>
+      <div *ngIf="checked" class="legend ml-5">
+        <span class="square-unavailable"></span>
+        <h4>Unavailable</h4>
+      </div>
+      <mat-chip-list #chipList>
+        <div *ngIf="checked" class="row">
+          <div *ngFor="let slot of slots">
+            <div class="col-4">
+              <mat-chip
+                color="primary"
+                [selected]="slot.selected"
+                [selectable]="true"
+                [removable]="false"
+              >
+                {{ slot.viewValue }}
+              </mat-chip>
+            </div>
+          </div>
+        </div>
+      </mat-chip-list>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

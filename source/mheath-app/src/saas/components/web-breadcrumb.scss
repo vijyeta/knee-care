@@ -1,0 +1,26 @@
+.DSA_breadcrumb,.DSA_breadcrumb{
+
+    a{
+        color:$text-primary-80;
+        font-size:$size-button-14;
+        font-family: $font-style-1;
+        padding: 4px 0;
+    }
+
+    span{
+        color: $text-black;
+        font-size:$size-text-14;
+    }
+}
+.DSA_breadcrumb a::after{
+    content: "\e0af";
+    margin: 0px 8px;
+    display: inline-block;
+    font-family: "DS-iconfont", Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+    font-style: normal;
+    font-weight: 400!important;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 20px;
+    color: $bg-neutral-60;
+}

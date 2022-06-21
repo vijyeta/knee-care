@@ -1,0 +1,245 @@
+/*popover menu customization Start*/
+.DSA_popoverMainCtr{
+    position: relative;
+    display: inline-block;
+}
+.DSA_popoverMain{
+    display: none;
+}
+.DSA_popoverMainBody{
+    @extend %shadow-big;
+    border:0.5px solid rgba(0,0,0,0.12);
+    width:372px;
+    position: absolute;
+    border-radius: $border-radius-extrabig;
+    z-index:9999;
+    background: $bg-white; 
+}    
+.DSA_showpopup{
+    display: block;
+}
+    
+.DSA_popoverMainBody:before {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;   
+    border-right:8px solid $bg-neutral-50; 
+    content:'';
+    position: absolute;
+    left:-10px;
+    top:10px;    
+}
+.DSA_popoverMainBody:after {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;   
+    border-right:8px solid $bg-white; 
+    content:'';
+    position: absolute;
+    left:-8px;
+    top:8px;    
+}    
+.DSA_popoverMainBody.DSA_leftArrow:before {
+    top:50%;
+    right:-8px;
+    left:auto;
+    border-left:8px solid $bg-neutral-50; 
+    border-right:none; 
+}
+.DSA_popoverMainBody.DSA_leftArrow:after {
+    top:50%;
+    right:-8px;
+    left:auto;
+    border-left:8px solid $bg-white; 
+    border-right:none;     
+}
+.DSA_popoverMainBody.DSA_rightArrow:before {
+    top:50%;
+    left:-9px;
+    right:auto;
+}
+.DSA_popoverMainBody.DSA_rightArrow:after {
+    top:50%;
+    left:-8px;
+    right:auto;
+}    
+.DSA_popoverMainBody.DSA_bottomArrow:before { 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-bottom: 10px solid $bg-neutral-50; 
+    border-top:none; 
+    left:50%;
+    top:-10px;
+    bottom: auto;
+}
+.DSA_popoverMainBody.DSA_bottomArrow:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-bottom: 10px solid $bg-white;
+    border-top:none; 
+    left:50%;
+    top:-9px;
+    bottom: auto;    
+}    
+.DSA_popoverMainBody.DSA_topArrow:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-top: 10px solid $bg-neutral-50; 
+    border-bottom:none; 
+    left:50%;
+    top:auto;
+    bottom:-10px;
+}
+.DSA_popoverMainBody.DSA_topArrow:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-top: 10px solid $bg-white; 
+    border-bottom:none; 
+    left:50%;
+    top:auto;
+    bottom:-9px;
+}    
+.DSA_popovermid{
+    width:410px;
+    border-radius: $border-radius-extrabig;
+    top:90px;
+    left:50%;
+    margin-left:-200px;
+    position: absolute;
+}
+.DSA_popovermid:before,.DSA_popovermid:after{
+    border:0 !important;
+}
+.DSA_popover.popover{
+    @extend %shadow-big;
+    border:0;
+    border-radius: $border-radius-extrabig;
+    width:372px;
+    font-size: 1.6rem;
+    font-family: $font-style-1;
+}
+.DSA_popover.bs-popover-left{
+    left:-8px !important;
+}
+.DSA_popover.bs-popover-left > .arrow::after{
+    border-width: 10px 0 10px 10px;
+    right:-2px;
+}
+.DSA_popover.bs-popover-left > .arrow::before{
+    border-width: 10px 0 10px 10px;
+    right:-3px;
+    border-left-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-right{
+    right:-8px !important;
+}
+.DSA_popover.bs-popover-right > .arrow::after{
+    left: -3px;
+    border-width: 10px 10px 10px 0;
+}
+.DSA_popover.bs-popover-right > .arrow::before{
+    left: -4px;
+    border-width: 10px 10px 10px 0;
+    border-right-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-bottom{
+    top:8px !important;
+}
+.DSA_popover.bs-popover-bottom > .arrow::after{
+    top: -3px;
+    border-width: 0 10px 10px 10px;
+}
+.DSA_popover.bs-popover-bottom > .arrow::before{
+    top: -4px;
+    border-width: 0 10px 10px 10px;
+    border-bottom-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-top{
+    top:-8px !important;
+}
+.DSA_popover.bs-popover-top > .arrow::after{
+    bottom: -3px;
+    border-width: 10px 10px 0;
+}
+.DSA_popover.bs-popover-top > .arrow::before{
+    bottom: -4px;
+    border-width: 10px 10px 0;
+    border-top-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-auto[x-placement^="left"] > .arrow::after{
+    border-width: 10px 0 10px 10px;
+    right:-4px;
+}
+.DSA_popover.bs-popover-auto[x-placement^="left"] > .arrow::before {
+    border-width: 10px 0 10px 10px;
+    right:-5px;
+    border-left-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-auto[x-placement^="right"] > .arrow::after {
+    left: -4px;
+    border-width: 10px 10px 10px 0;
+}
+.DSA_popover.bs-popover-auto[x-placement^="right"] > .arrow::before {
+    left: -5px;
+    border-width: 10px 10px 10px 0;
+    border-right-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+    top: -4px;
+    border-width: 0 10px 10px 10px;
+}
+.DSA_popover.bs-popover-auto[x-placement^="bottom"] > .arrow::before {
+    top: -5px;
+    border-width: 0 10px 10px 10px;
+    border-bottom-color: $text-neutral-50;
+}
+.DSA_popover.bs-popover-auto[x-placement^="top"] > .arrow::after {
+    bottom: -4px;
+    border-width: 10px 10px 0;
+}
+.DSA_popover.bs-popover-auto[x-placement^="top"] > .arrow::before {
+    bottom: -5px;
+    border-width: 10px 10px 0;
+    border-top-color: $text-neutral-50;
+}
+.DSA_popover .popover-body{
+    padding:0;  
+    border-radius: $border-radius-extrabig;
+    border:0.5px solid rgba(0,0,0,0.12);
+}
+.DSA_popoverTitle{
+    padding: 24px 16px 0px 24px;
+    font-family: $font-style-2;
+    font-size: $size-button-18;
+    color:$text-black;
+    border:0;
+}
+.DSA_popoverCnt{
+    padding: 24px;
+}
+.DSA_popoverFooter{
+    @extend %footer-shadow;
+    padding: 16px 24px;
+}
+.DSA_popoverclose{
+    float: right;
+    margin-top: -8px;
+}
+.DSA_popoverRM{
+    margin-right: -8px;
+    margin-top: -8px;
+}    
+.DSA_popoverwdth.popover{
+    width:760px;
+    max-width:760px;
+}
+
+@media screen and (max-width:768px){
+    .DSA_popoverwdth.popover{
+        width:100%;
+        max-width:760px;
+    }    
+}
+/*popover menu customization End*/

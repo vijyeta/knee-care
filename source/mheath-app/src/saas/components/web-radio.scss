@@ -1,0 +1,108 @@
+/* Radio CSS - Start */
+/*.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}*/
+.DSA_radioblock:not(.d-block)~.DSA_radioblock:not(.d-block){
+  margin: 0 0 0 16px !important;
+}
+.DSA_radioblock.d-block~.DSA_radioblock.d-block{
+  margin: 8px 0 0 !important;
+}
+.DSA_Wb_custom-radio .mat-radio-container{
+  width: 16px;
+  height: 16px;
+}
+.DSA_Wb_custom-radio .mat-radio-outer-circle{
+  width: 16px;
+  height: 16px;
+  border-color: $border-neutral-80;
+  border-width: 1px;
+  z-index: 2;
+}
+.DSA_Wb_custom-radio .mat-radio-inner-circle{
+  width: 8px;
+  height: 8px;
+  left: 4px;
+  top: 4px;
+  z-index: 2;
+}
+.DSA_Wb_custom-radio .mat-radio-button .mat-radio-inner-circle{
+  transform: scale(1);
+}
+.DSA_Wb_custom-radio .mat-radio-label-content{
+  color: $text-neutral-80;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-disabled .mat-radio-outer-circle{
+  border-color: $bg-neutral-50;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+  border-color: $bg-primary-80;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-inner-circle{
+  background-color : $bg-primary-80;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-accent .mat-radio-inner-circle{
+  background-color: $border-neutral-50;
+} 
+.DSA_Wb_custom-radio .mat-radio-button .mat-radio-ripple .mat-ripple-element{
+  border-radius: $border-radius-small;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-disabled .mat-radio-inner-circle, 
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-disabled .mat-radio-ripple .mat-ripple-element{
+  background-color: $bg-neutral-50;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-disabled.mat-radio-checked .mat-radio-outer-circle{
+  border-color: $bg-primary-60;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-disabled.mat-radio-checked .mat-radio-inner-circle{
+  background-color: $bg-primary-60;
+}
+
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-disabled .mat-radio-label-content,
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked.mat-radio-disabled .mat-radio-label-content {
+  color: $text-neutral-50;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked .mat-radio-label-content{
+  color: $text-black;
+}
+
+
+
+.DSA_Wb_custom-radio .mat-radio-button .mat-radio-ripple{
+  width: 24px;
+  height: 24px;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+}
+
+.DSA_Wb_custom-radio .mat-radio-button:not(.mat-radio-disabled) .mat-radio-container:hover .mat-radio-outer-circle{
+  border-color: $bg-primary-80;
+}
+.DSA_Wb_custom-radio .mat-radio-button:active:not(.mat-radio-disabled) .mat-radio-outer-circle{
+  border-color: $bg-primary-100;
+}
+.DSA_Wb_custom-radio .mat-radio-button:active:not(.mat-radio-disabled) .mat-radio-inner-circle{
+  background-color: $bg-primary-100;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked:not(.mat-radio-disabled).mat-accent .mat-ripple-element{
+  background-color: $bg-primary-60;
+} 
+.DSA_Wb_custom-radio .mat-radio-button:active:not(.mat-radio-disabled).mat-accent .mat-ripple-element{
+  background-color: $bg-neutral-50;
+  opacity: 1;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked:active:not(.mat-radio-disabled).mat-accent .mat-ripple-element{
+  background-color: $bg-primary-60;
+  opacity: 1;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked:not(.mat-radio-disabled).mat-accent .mat-radio-container:hover .mat-ripple-element{
+  opacity: 1;
+  background-color: $bg-primary-50;
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked:active:not(.mat-radio-disabled).mat-accent .mat-radio-outer-circle{
+  border-color: $bg-primary-100;  
+}
+.DSA_Wb_custom-radio .mat-radio-button.mat-radio-checked:active:not(.mat-radio-disabled).mat-accent .mat-radio-inner-circle{
+  background-color: $bg-primary-100;  
+}
+/* Radio CSS - End */

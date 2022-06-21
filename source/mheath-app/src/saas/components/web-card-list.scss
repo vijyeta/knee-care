@@ -1,0 +1,16 @@
+.DSA_wb_card-widget-02.mat-card.DSA_wb_cardWithList{
+    height: 191px;
+    padding: 24px 24px 16px;
+    .DSA_wb_normalListItem{
+        li > a{
+            padding: 0;
+            height: 93px;
+            img{
+                width: auto;
+            }
+        }
+        li > a.noHover:hover{
+            background: none;
+        }
+    } 
+}

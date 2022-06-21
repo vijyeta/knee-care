@@ -1,0 +1,78 @@
+.option_ul{       
+    li{
+        width: auto;
+        float: left;
+        a{
+            width: 100%;
+            background-color: $bg-white;
+            border-radius: $border-radius-big;
+            min-height: 88px;
+            padding: 24px;      
+            display: block;      
+            @extend %default-shadow; 
+            position: relative;
+            border: $border-width-2 solid transparent;
+            transition: box-shadow 280ms cubic-bezier(.4,0,.2,1), background-color 280ms linear;
+            div.DSA_wb_mainBodyTxt{
+                color: $text-neutral-80;
+                line-height: 40px;
+                display: block;
+                margin: 0 0 0 48px;
+            }                     
+        }        
+        a:hover{
+            @extend %hover-shadow;  
+            text-decoration: none;
+            outline: none; 
+            i.icon{
+                color: $text-black;
+            }
+        }
+        a:focus{
+            text-decoration: none;
+            outline: none;
+            @extend %active-shadow; 
+            background-color: $bg-neutral-40;        
+            .whiteIconNoshadow-Circle{
+                background: $bg-neutral-40;          
+            }
+            i.icon{
+                color: $text-primary-100;
+            }            
+        }
+        a.icon_withAction.selected{
+            border: $border-width-2 solid $border-primary-80;
+            background-color: $bg-white;
+            
+            .whiteIconNoshadow-Circle{
+                background: transparent;        
+            }
+            i.icon{
+                color: $text-primary-80;
+            }            
+        }        
+    }       
+} 
+.option_ul li.option_mini{  
+    text-align: center; 
+}  
+.option_ul li.option_mini div.DSA_wb_mainBodyTxt{
+    line-height: 1;
+    margin: 0;
+}  
+.option_ul li a:hover div.DSA_wb_mainBodyTxt{
+    color: $text-black;
+}
+.option_ul li a:focus div.DSA_wb_mainBodyTxt{
+    color: $text-primary-100;
+    font-weight: $font-500;
+}
+.option_ul li a.icon_withAction.selected div.DSA_wb_mainBodyTxt{
+    color: $text-primary-80;
+    font-weight: $font-500;
+}
+.card_label{
+    color: $text-neutral-90;
+    font-family: $font-style-1;
+    font-size: $size-text-12;
+}

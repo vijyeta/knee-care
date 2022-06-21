@@ -1,0 +1,94 @@
+// custom accordion styles variation2
+.DSA_wb-cus-accordion2 {
+    /* background: $bg-white; */
+    background: transparent;
+}
+.DSA_wb-cus-accordion2 .mat-expansion-panel{
+    padding:0px 16px;
+    position: relative;
+    margin: 0 !important;
+    border-radius: $border-radius-none !important;
+    box-shadow:  none;  
+    background: transparent;
+    border-bottom: 1px solid $bg-neutral-50;
+    .DSA_accordionIcon{
+      display: none;
+      position: absolute;
+      right:0;
+      top:12px;
+    }
+    &:hover{
+      /* @extend %accordion-hover-shadow; */
+      background: $bg-neutral-40;
+      
+      .DSA_accordionIcon{
+        display: inline-block;
+        margin-bottom:0;
+        transform: rotate(0deg);
+        color: $icon-primary-80;
+      }
+    }
+  
+    .mat-expansion-panel-body{
+      padding:0 0 16px;
+    }
+  
+    .mat-expansion-panel-header {
+      height: 40px !important;
+      padding: 0;       
+      border-radius: $border-radius-none;
+      font-family: $font-style-2;
+      font-size: $size-hd-16;
+      font-weight: $font-600;
+      font-style: normal;    
+      position: relative;
+      /* border-bottom: 1px solid $bg-neutral-40; */
+      .mat-expansion-panel-header-title{
+        color:$text-neutral-90 !important;
+      }  
+      &:hover{
+        background: none !important;   
+        border-bottom: 0;
+        .mat-expansion-panel-header-title{
+          color:$text-primary-80 !important;
+        }  
+      }    
+    }
+}
+  
+.DSA_wb-cus-accordion2 .mat-expansion-panel:first-child{
+    border-top: 1px solid $bg-neutral-50;
+}
+  
+.DSA_wb-cus-accordion2 .mat-expansion-panel.mat-expanded{  
+    /* background: $bg-neutral-40; */
+    .DSA_wb_normalListItem.DSA_wb_listWithRadius{
+      margin: 0 -16px;
+    }
+    
+    .DSA_accordionIcon{
+      display: inline-block;
+      margin-bottom:0;
+      transform: rotate(90deg);
+      color: $icon-primary-80;
+    }
+    &:hover{
+      box-shadow: none !important;
+      background: none !important; 
+      .DSA_accordionIcon{
+        /* display: none; */
+        transform: rotate(90deg);
+      }
+    }
+    
+    .mat-expansion-panel-header {
+      background: none !important;    
+      border-bottom: 0;
+      /* .DSA_accordionChip{
+        display: none;
+      } */
+      .mat-expansion-panel-header-title{
+        color:$text-primary-80 !important;
+      }
+    }
+}

@@ -1,0 +1,192 @@
+/* Input CSS - Start */
+.mat-form-field-appearance-legacy .mat-form-field-infix{
+padding: 0;
+}
+.DSA_Wb_custom-form-field.mat-form-field.mat-form-field-invalid .mat-form-field-label{  
+  color: $text-status-error;
+}
+.DSA_Wb_custom-form-field .mat-error{
+  color: $text-status-error;
+   /*padding-left: 16px;*/
+}
+.DSA_Wb_custom-form-field.mat-form-field.mat-form-field-invalid .mat-form-field-ripple, 
+.DSA_Wb_custom-form-field.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent{
+  background-color: $text-status-error;
+ 
+}
+.DSA_Wb_custom-form-field.mat-form-field-appearance-legacy .mat-hint{
+  font-size: $size-text-12;
+  color: $text-neutral-80;
+  padding-left: 16px;
+}
+.DSA_Wb_custom-form-field.mat-form-field-disabled.mat-form-field-appearance-legacy .mat-form-field-label, 
+.DSA_Wb_custom-form-field.mat-form-field-disabled input.mat-input-element{
+  color: $text-neutral-50;
+}  
+.DSA_Wb_custom-form-field.mBottom{
+  margin: 0 0 24px;
+}
+.DSA_Wb_custom-form-field.mat-form-field-appearance-legacy.mat-form-field-invalid:not(.mat-focused) .mat-form-field-ripple {
+  height: 2px;
+}
+.DSA_Wb_custom-form-field:hover:not([disabled]) .mat-form-field-underline{
+  background: $bg-neutral-80!important;
+}
+.DSA_Wb_custom-form-field .mat-form-field-prefix, .DSA_Wb_custom-form-field .mat-form-field-suffix{
+  color: $text-neutral-80;
+}
+.DSA_Wb_custom-form-field.mat-form-field-disabled .mat-form-field-prefix, 
+.DSA_Wb_custom-form-field.mat-form-field-disabled .mat-form-field-suffix{
+  color: $text-neutral-50;
+}
+.DSA_Wb_custom-form-field.mat-form-field-disabled .mat-form-field-suffix i{
+  opacity: 0.5;
+}
+.DSA_inputwithInfoCtr .icon{
+  position: absolute;
+  right: 16px;
+  top:5px;
+  z-index: 9;
+}
+
+.DSA_wb_txtArea_Icon{
+top: -3px!important;
+}
+.DSA_formicon{
+  float: right;
+}
+.DSA_formicon:hover,.DSA_formicon:active,.DSA_formicon:focus{
+  color:$blue-color !important;
+}
+.DSA_Wb_custom-form-field.DSA_wb_input-readonly{
+  .mat-form-field-underline{
+    display: none;
+  }
+}
+.DSA_Wb_custom-form-field textarea.mat-input-element{
+  resize: none;
+  padding:24px 12px 10px;
+  background: $bggrey-lightwhite;
+  border-radius: $border-radius-big $border-radius-big 0 0;
+   transition: 0.2s all;
+   margin: 0;
+   &:hover:not([disabled]){
+  background: $bg-white;
+  @extend %input-hover-shadow; 
+
+  .mat-form-field-underline{
+  background: $bg-neutral-80!important;
+}
+  }
+
+}
+.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label,.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+	transform: translateY(-0.3em) scale(.75)!important;
+	width: 133.33333%;
+}
+ 
+ .DSA_inputwithInfoCtr{
+ position: relative;
+ }
+
+ .DSA_wb_mat-suffix {
+    position: absolute;
+    right: 16px;
+    top: 15px;
+}
+.DSA_Wb_custom-form-field.DSA_form_nofloatLabel{
+  .mat-form-field-label-wrapper{
+    top: -32px;
+  }
+  .mat-input-element{
+    height: 35px;
+    padding: 8px;
+    border-radius: $border-radius-small $border-radius-small 0 0;
+    &:hover:not([disabled]){
+      background: $bg-primary-50;
+      box-shadow: none !important;
+    }
+  }
+  &.mat-form-field-appearance-legacy .mat-form-field-label{
+    padding: 0;
+    font-size: $size-text-12;
+    top:12px;
+    color: $text-neutral-90;
+  }
+  .mat-form-field-label{
+    display: block;
+  }
+  &.mat-form-field-appearance-legacy .mat-hint{
+    padding-left: 0;
+  }
+  .mat-icon-button{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+  .DSA_wb_mat-suffix{
+    top: 4px;
+    right: 8px;    
+  }
+  &.DSA_form_suffixTxt{
+    .DSA_wb_mat-suffix{
+      top: 8px;
+     }
+  }
+  
+  .DSA_wb_mat-suffix i.icon{
+    margin-top: 0;
+  }  
+  textarea.mat-input-element{
+    height: auto;
+  }
+  &.mat-form-field-appearance-legacy .mat-form-field-underline{
+    display: none;
+  }
+  &.mat-form-field-appearance-legacy.mat-focused .mat-form-field-underline{
+    display: block;
+  }
+  &.mat-form-field-invalid .mat-input-element{
+    background: $bgcolor-red;
+    &:hover:not([disabled]){
+      background: $bgcolor-red;
+    }
+  }
+  &.mat-form-field-invalid.mat-form-field-appearance-legacy.mat-focused .mat-form-field-ripple{
+    background: $text-status-error;
+  }
+  &.DSA_wb_input-readonly .mat-input-element{
+    background: $bgcolor-white;
+    padding: 8px 8px 8px 0;
+    color: $text-neutral-90;
+    &:hover:not([disabled]){
+      background: $bgcolor-white;
+    }
+  }
+  &.DSA_form_suffixTxt{
+    .mat-input-element{
+      padding: 8px 118px 8px 8px;
+    }
+  }
+  &.DSA_form_suffixIcon:not(.DSA_wb_input-readonly){
+    .mat-input-element{
+      padding: 8px 40px 8px 8px;
+    }
+  }
+  &.mat-form-field-disabled .DSA_wb_mat-suffix, 
+  &.mat-form-field-disabled .DSA_wb_mat-suffix i.icon{
+    color: $text-neutral-50;
+  }   
+  
+}
+.DSA_inputwithInfoCtr_nofloatLabel{
+    &.DSA_inputwithInfoCtr .icon{
+        position:initial;
+        right:auto;
+        top:auto;
+    }
+    .DSA_inputwithInfo{
+        margin-right: 32px;
+    }
+}
+/* Input CSS - End */

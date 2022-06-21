@@ -1,0 +1,17 @@
+.DSA_wb_custom-table.table-width10{
+    width: 125px;
+    display: inline-table;
+    thead{
+        tr{
+            th{
+                padding: 10px 0;
+                vertical-align: middle;
+                height: 40px;
+            }
+        }
+    }
+}
+.DSA_wb_custom-table.table-width90{
+    width: calc(100% - 125px);
+    display: inline-table;
+}  

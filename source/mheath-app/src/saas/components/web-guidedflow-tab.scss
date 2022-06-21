@@ -1,0 +1,83 @@
+.DSA_guidedflow .mat-tab-header{
+    border-bottom:0;
+}
+.DSA_guidedflow .mat-tab-label,
+.DSA_guidedflow .mat-tab-link{
+    color:$text-neutral-80;
+    margin-right:40px;
+    min-width:120px;
+    overflow: visible;
+}
+.DSA_guidedflow .mat-tab-label:hover,
+.DSA_guidedflow .mat-tab-link:hover{
+    background: $bg-neutral-40;
+}
+.DSA_guidedflow .mat-tab-label:active,
+.DSA_guidedflow .mat-tab-link:active{
+    background: $bg-primary-50;
+}
+.DSA_guidedflow .mat-tab-label-active,
+.DSA_guidedflow .cdk-focused{
+    color:$text-primary-80;
+}
+.DSA_guidedflow .mat-tab-label-active:hover{
+    background:none;
+}
+.DSA_guidedflow .mat-tab-label-active:active{
+    font-weight: $font-600;
+}
+
+.DSA_guidedflow .mat-tab-label .DSA_wb_Complete,
+.DSA_guidedflow .mat-tab-link .DSA_wb_Complete {
+    color:$text-status-success
+}
+.DSA_guidedflow .mat-tab-group.mat-primary .mat-ink-bar,
+.DSA_guidedflow .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    display:none;
+}
+.DSA_wb_stepCircle{
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: $border-radius-circle;
+    border:$border-width-1 solid $border-neutral-80;
+    font-size: $size-text-16;
+    font-family: $font-style-1;
+    font-weight: $font-500;
+    font-style: normal;
+    line-height: 40px;
+    text-align: center;
+}
+.DSA_wb_stepComplete{
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: $border-radius-circle;
+    border:$border-width-1 solid $border-status-success;
+    text-align: center;
+    padding: 8px 0 0;
+}
+.DSA_wb_stepTxt{
+    font-size: $size-text-12;
+    font-family: $font-style-1;
+    font-weight: $font-500;
+    font-style: normal;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+.DSA_guidedSeperator{
+    background: url('../../assets/images/Guidedflow_seperator.png') no-repeat;
+    width:40px;
+    height:4px;
+    display: inline-block;
+    margin-top: 8px;
+    position: absolute;
+    top:30px;
+    left:100%;
+}
+.DSA_guidedflow .mat-tab-label-active .DSA_wb_stepCircle,
+.DSA_guidedflow .cdk-focused .DSA_wb_stepCircle{
+    color:$text-primary-80;
+    border:$border-width-1 solid $border-primary-80;
+}

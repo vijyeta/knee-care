@@ -1,0 +1,98 @@
+/* Timepicker CSS - Start */   
+.DCA_wb_cusTime .timepicker-dial__hint{
+    display: none !important;
+}     
+.DCA_wb_cusTime {
+    .timepicker__header {
+        background-color: $bg-primary-80 !important;
+        border-radius: $border-radius-big $border-radius-big 0 0!important;
+    }
+    .timepicker__actions{
+        border-radius: 0 0 $border-radius-big $border-radius-big!important;
+        @extend %footer-shadow;
+    }    
+  
+    .timepicker-dial__control{
+        font-size: $size-hd-24 !important;
+        font-weight: $font-600 !important;
+        font-style: normal;
+        margin-right: 5px !important;
+        width:30px !important;
+     }
+  
+    .clock-face__clock-hand {
+        background-color: $bg-primary-80 !important;
+  
+        &::after {
+            background-color: $bg-primary-80 !important;
+        }
+    
+        &::before {
+            border-color: $bg-primary-80 !important;
+        }
+    }
+    
+    .clock-face__number {
+        color:$text-black !important;
+        font-size: $size-text-16 !important;
+        > span.active {
+            background-color: $bg-primary-80 !important;
+        }
+    }
+  
+    button:not(.timepicker-dial__item) {
+        color: $text-primary-80 !important;
+        padding:0px;
+        line-height: 32px;
+        height: 32px;
+        width:auto;
+        min-width: auto;
+        &:hover{
+            background:  $bg-primary-50;
+            border-radius: $border-radius-big;
+        }
+        &:active{   
+            background: $bg-primary-60;
+            border-radius: $border-radius-big;
+        }
+        &:focus{
+            outline: none !important;
+            background: $bg-primary-60;
+            border-radius: $border-radius-big;
+        }
+    }   
+}  
+  
+.DCA_positionRight.timepicker{
+    margin-left:-180px;
+}
+.DCA_wb_cusTime .timepicker-period{
+    flex-direction: row !important;
+}
+.DCA_wb_cusTime .timepicker-period__btn{
+    margin-left: 15px !important;
+}
+.DCA_wb_cusTime.timepicker{
+    width:320px !important;
+    @extend %default-shadow;
+    border-radius: $border-radius-big!important;
+}
+.DCA_wb_cusTime .timepicker__body{
+    padding:15px 5px 0px 10px !important;
+}
+.DCA_wb_cusTime .clock-face{
+    border-radius: $border-radius-big !important;
+    margin: 15px !important;
+}
+.DCA_wb_cusTime .clock-face__number > span{
+    border-radius: $border-radius-big !important;
+}
+.DCA_wb_cusTime .timepicker-dial__time{
+    font-size: $size-hd-24 !important;
+    font-weight: $font-600 !important;
+    font-style: normal;
+}
+.DCA_wb_cusTime .timepicker-dial__container{
+    justify-content: flex-start !important;
+}     
+/* Timepicker CSS - End */

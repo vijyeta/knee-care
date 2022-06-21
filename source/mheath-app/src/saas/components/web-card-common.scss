@@ -1,0 +1,174 @@
+.DSA_wb_card-widget.DSA_wb_card-widget-hidden{
+    overflow: hidden;
+}  
+.DSA_wb_card-widget.mat-card{
+    padding: 24px;
+    @extend %default-shadow;    
+    min-height: 50px;  
+    border-radius: $border-radius-extrabig;    
+    .mat-card-content{
+        position: relative;
+        min-height: 40px;
+        margin-bottom: 24px;
+        .close-icon{      
+            cursor: pointer;
+        }
+    }
+    .mat-card-subtitle{
+        margin-bottom: 24px;
+    } 
+    .mat-card-subtitle:not(:first-child){
+        margin-top: -4px;
+    }
+    .mat-card-actions{
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+        padding-right: 24px;    
+        @extend %footer-shadow;
+        .DSA_wb_text-btn:first-child{
+            margin-left: -16px !important;
+        }
+    }    
+    .mat-card-actions.card-actions-hover{
+        position: absolute;
+        width: 100%;
+        bottom: -30px;
+        transition:bottom 0.2s ease 0.2s;
+        background: $bg-white;    
+    }
+    .DSA_wb_flex80{    
+        float: left;
+        width: 80%;
+    }
+    .DSA_wb_flex20{
+        float: right;
+        width: 20%;
+    }
+    .DSA_wb_flex25{
+        width: 25%;
+        float: right;
+    }
+    .mat-card-header-text{
+        width: 100%;
+        margin: 0;
+    }
+    hr{
+        border-top: 1px solid $bg-neutral-40;
+        margin: 0 -16px;  
+    }  
+    hr.DSA_marhr{
+        margin: 16px 0;  
+    }
+    hr.nomar{
+        margin: 0;  
+    }
+    .DSA_matCard-imageCtr{    
+        margin: 0 -24px 24px;
+        .mat-card-image.img-corner-rounded{
+            border-top-left-radius: $border-radius-extrabig;
+            border-top-right-radius: $border-radius-extrabig;
+        }
+    }
+    .DSA_matCard-imageCtr .mat-card-image{
+        width:100%;
+        margin: 0;
+    }
+    .DSA_matCard-imageCtr .mat-card-image:first-child{
+        margin-top: 0;        
+    }    
+    &:hover{
+        @extend %hover-shadow; 
+        .DSA_wb_title, .DSA_wb_h2Header{
+            color: $text-primary-80;
+        } 
+        .mat-card-actions.card-actions-hover{      
+            bottom: 24px;
+        }   
+    }  
+}
+.DSA_wb_card-widget.mat-card.nopad_wb{
+    padding: 0 !important;
+}  
+.DSA_card-rounded.mat-card{
+    border-radius: $border-radius-extrabig;
+    padding:24px;  
+}
+.DSA_card-rounded.mat-card .mat-card-content{
+    margin-bottom: 0;
+}
+.DSA_wb_text-1line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+.DSA_wb_text-3line{
+    height: 72px;
+    overflow: hidden;
+}
+.DSA_text-1line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+.DSA_text-2line{
+    height: 42px;
+    overflow: hidden;
+}
+.DSA_text-3line{
+    height: 54px;
+    overflow: hidden;
+}  
+.DSA_text-4line{
+    height: 72px;
+    overflow: hidden;
+}
+.DSA_h4Header.DSA_text-2line{
+    height: 32px;
+}
+p.DSA_text-3line{
+    height: 63px;    
+}  
+.DSA_wb_card-widget .v-menu-icon{
+    background-position: center;
+}
+.DSA_wb_card-widget .v-menu-icon.bottom{
+    top: auto;
+    bottom:16px;
+    right: 8px;
+    position: absolute;
+}
+.DSA_action-ul{
+    margin: 4px 0;
+    li{
+        float: left;
+        margin: 0 0 0 8px;
+    }
+}
+.mat-card-actions .mat-button, .mat-card-actions .mat-raised-button{
+    margin: 0 !important;
+}
+.DSA_wb_card-widget.mat-card .mat-card-actions:last-child{
+    margin-bottom: -16px;
+}
+.DSA_wb_card-widget-02.mat-card{
+    border-radius: $border-radius-extrabig;
+    @extend %default-shadow;
+    padding: 16px;  
+}  
+.DSA_wb_card-widget.DSA_wb_actionCard{
+    min-width: 274px;
+    max-width: 274px;
+}
+.mat-card:not([class*="mat-elevation-z"]){
+    @extend %default-shadow;
+}
+.DSA_wb_card-widget.DSA_wb_imageCard.mat-card:hover .DSA_wb_title, 
+.DSA_wb_card-widget.DSA_wb_imageCard.mat-card:hover .DSA_wb_h2Header{
+    color: $text-white;
+}
+.DSA_wb_card-widget.DSA_wb_imageCard.DSA_wb_card_mediaBG.mat-card:hover .DSA_wb_h2Header{
+    color: $text-black;
+}  

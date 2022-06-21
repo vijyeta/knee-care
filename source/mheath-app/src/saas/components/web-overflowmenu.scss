@@ -1,0 +1,10 @@
+/*overflow menu customization Start*/
+.DSA_dropDown.dropdown-menu{
+    @extend %default-shadow ;
+    border:0;
+    border-radius: $border-radius-big;
+}
+.DSA_dropDown.dropdown-menu .DSA_wb_listItemSingle{
+    margin: 8px 0;
+}
+/*overflow menu customization End*/

@@ -1,0 +1,131 @@
+.web_custom_modal{
+    .modal-header .close{
+        opacity: 1;
+        padding: 0px;        
+    }
+    .modal-dialog{
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: auto;
+        min-height: calc(100vh - 60px);    
+    }  
+    .modal-header{
+        border:none;
+        display: block;
+        padding: 24px;
+        h4{
+            font-weight: 600;
+            font-style: normal;
+        }
+    }
+    .modal-body{
+        padding: 24px;
+        min-height: 100px;
+        .close{
+            opacity: 1;
+            &:focus{
+                outline: none
+            }
+        }
+    }
+    .modal-header .close:focus{
+        outline: none;
+    }
+    .modal-footer{
+        border: none;
+        padding: 5px 24px;
+        height: 55px;
+        justify-content: left;
+        @extend %footer-shadow;
+        &.borderYes{
+            border-top: 1px solid $bg-neutral-50;
+        }
+        *{
+            margin: 0
+        }
+    }
+}
+
+/*Modal styles begin */
+.modal-content{
+    border-radius:$border-radius-small;
+}
+.DSA_modal-sm{
+    .modal-dialog{
+        min-width: 425px;
+        max-width: 425px;
+    }
+
+    .modal-footer{
+        height: 48px;
+    }
+}
+.DSA_modal-sm .modal-content{
+    border-radius: $border-radius-big;
+    border:0;
+}
+.DSA_modal-lg{
+    .DSA_wb_h2Header{
+        font-weight: 500;
+        font-style: normal;
+    }  
+}
+.DSA_modal-lg .modal-content{
+    border-radius: $border-radius-big;
+    border:0;
+}
+.DSA_wb-custom-scroll-container{
+    height: 400px;
+    position: relative;
+    .ps__thumb-y{
+        width: 8px;
+        border-radius: $border-radius-small;
+        background: $bg-neutral-50;
+    }
+}
+.ps--focus > .ps__rail-x, 
+.ps--focus > .ps__rail-y, 
+.ps--scrolling-x > .ps__rail-x, 
+.ps--scrolling-y > .ps__rail-y,
+.ps:hover > .ps__rail-x, 
+.ps:hover > .ps__rail-y{
+    opacity: 1!important;
+}
+
+@media(min-width:991px){
+    .DSA_modal-lg{
+        .modal-dialog{
+            min-width: 832px;
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .DSA_modal-xlg{    
+        .modal-dialog{
+            min-width: 1036px;
+        }
+    }
+}
+.DSA_modal-xlg .modal-content{
+    border-radius: $border-radius-big;
+    border:0;
+}
+
+/* bootstrap modal scroll*/
+.DSA_modaloverflow{
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .web_custom_modal{
+        .modal-dialog {
+            min-height: calc(100vh - 20px);
+        }
+    }
+}
+.DSA_wb_auto{
+    margin: 0 auto!important
+}

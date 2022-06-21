@@ -1,0 +1,152 @@
+/*chat bot*/
+.DSA_chatbot{
+  width:56px;
+  height: 56px;
+  display: inline-block;
+  line-height: 56px;
+  text-align: center;
+  @extend %default-shadow;
+  position: fixed;
+  right:32px;
+  bottom: 80px;
+  z-index: 9;
+  border-radius: $border-radius-circle;
+  background:  $bg-white url('../../assets/images/Chatbot.png') no-repeat center center;
+}
+.DSA_chatbot:hover{
+  @extend %hover-shadow;
+}
+.DSA_chatbotCtr{
+  position: fixed;
+  right:32px;
+  bottom: 80px;
+  width:360px;
+  z-index: 9;
+  border-radius: $border-radius-extrabig;
+  @extend %hover-shadow;
+  transition: all 400ms cubic-bezier(0.32,1,0.23,1) 100ms;
+  //transform: translate(0,100%);
+  background:  $bg-white url('../../assets/images/chatBGbottom.png') no-repeat bottom left;
+  display: none;
+}
+@media screen and (max-width:450px){
+  .DSA_chatbotCtr{
+    right:8px;
+  }
+}
+.DSA_WidgetinnerCtr{
+  background: url('../../assets/images/chatBGtop.png') no-repeat top right;
+  min-height: 311px;
+  position: relative;
+  border-radius: $border-radius-extrabig;
+}
+.DSA_Widgetinner{
+  padding-bottom: 96px;
+}
+.DSA_chatbotCtr .DSA_widgetCtr  {
+  padding:0;
+}
+.DSA_chatbotCtr.DSA_isactive{
+  transition: all 400ms cubic-bezier(0.32,1,0.23,1) 100ms;
+  //transform: translate(0,0);
+  bottom: 80px;
+  display:block;
+}
+.DSA_Widgetfooter{
+  padding: 24px;
+}
+.DSA_widgetAbsfooter{
+  position: absolute;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index: 9;
+}
+.DSA_chatinput{
+  margin-right:64px;
+  border:1px solid $border-neutral-80;
+  height: 48px;
+  border-radius: 30px;
+  background:$bg-white;
+  padding: 8px;
+}
+.DSA_chatinput.DSA_active{
+  border:1px solid $border-primary-80;
+}
+.DSA_sendIcon{
+  border-radius: $border-radius-circle;
+  height: 32px;
+  width:32px;
+  display: inline-block;
+  padding: 8px;
+  background: $bg-neutral-40;
+}
+.DSA_sendIcon:hover{
+  background: $bg-primary-60;
+  color: $icon-primary-80;
+}
+.DSA_chatinput.DSA_active .DSA_sendIcon{
+  background: $bg-primary-50;
+}
+.DSA_chatinput.DSA_active .DSA_sendIcon .send-Icon{
+  color: $icon-primary-80;
+}
+.DSA_chatinput.DSA_active .DSA_sendIcon:hover{
+  background: $bg-primary-60;
+  color: $icon-primary-80;
+}
+.DSA_chatinput input{
+  line-height: 32px;
+  border:0;
+  width:80%;
+  margin-left: 5px;
+  padding:0 5px;
+}
+.DSA_chatinput input:active,.DSA_chatinput input:focus{
+  outline: none;
+}
+.DSA_chatinput a{
+  float: right;
+}
+.DSA_chatinput a:active,.DSA_chatinput a:focus{
+  outline: none;
+}
+.DSA_wb_fabButtonSmall{
+  width:48px;
+  height:48px;
+  line-height: 48px;
+}
+.DSA_wb_fabButtonSmall:active,.DSA_wb_fabButtonSmall:focus{
+  outline: none;
+}
+.DSA_panelHt{
+  height:44px;
+  border-bottom-left-radius: $border-radius-extrabig;
+  border-bottom-right-radius: $border-radius-extrabig;
+}
+.innerlink{
+  font-weight: 400;
+}
+.DSA_Widgetheadershadow{
+  @extend %header-shadow;
+}
+.DSA_chatboxLeft{
+  margin-right: 32px;
+}
+.DSA_chatboxRight{
+  margin-left: 32px;
+  border-radius: $border-radius-extrabig;
+  border-bottom-right-radius: $border-radius-none;
+  padding: 16px;
+  background: $bg-primary-50;
+  @extend %default-shadow;
+  float:right;
+  width:auto
+}
+.DSA_accordionreverse .mat-expansion-indicator::after{
+  transform: rotate(225deg);
+}
+.DSA_accordionreverse .mat-expansion-panel .mat-expansion-panel-header span:after{
+  margin-top: 2px;
+}
+/*chatbot end*/

@@ -1,0 +1,49 @@
+/*custom tag select*/
+.DSA_wb_custom-chip-list{
+    width:100%;
+    &:hover{
+        .mat-form-field-underline{
+            background-color: $bg-neutral-80!important
+        }
+        .mat-form-field-label{
+            color: $text-neutral-80!important
+        }
+    }
+    .mat-chip.mat-standard-chip .mat-chip-remove{
+        opacity: 1;
+    }
+    
+}
+.DSA_wb_custom-chip-list.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: $bg-neutral-50
+}
+.DSA_wb_custom-chip-list.mat-form-field.mat-focused .mat-form-field-label{
+    color:  $text-primary-80!important;
+}
+.DSA_wb_custom-chip-list.mat-form-field-appearance-legacy .mat-form-field-ripple {
+    height: 1px;
+}
+.DSA_wb_custom-chip-list.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: $bg-primary-80;
+}    
+
+.DSA_wb_custom-chip-list.DSA_form_nofloatLabel{
+    .mat-form-field-label-wrapper{
+        top:-32px;
+    }
+    
+    &.mat-form-field-appearance-legacy .mat-form-field-label {
+        padding: 0;
+        font-size: $size-text-12;
+        top: 12px;
+        color: $text-neutral-90;
+        display: block;
+    }
+    &.mat-form-field-appearance-legacy .mat-form-field-underline{
+        display: none;
+    }
+    &.mat-form-field-appearance-legacy.mat-focused .mat-form-field-underline{
+        display: block;
+    }
+}
+/*custom tag select*/

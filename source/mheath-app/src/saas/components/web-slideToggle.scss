@@ -1,0 +1,126 @@
+/* Slide toggle CSS - Start */
+.DSA_Wb_custom-slideToggle.mat-slide-toggle{
+    display: block;
+    margin: 0 0 16px;
+  }
+  .DSA_Wb_custom-slideToggle .mat-slide-toggle-bar{
+    background-color: $bg-neutral-60;
+    width: 24px;
+    height: 16px;
+  }
+  .DSA_Wb_custom-slideToggle .mat-slide-toggle-thumb{
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    border: $border-width-1 solid $border-neutral-50;
+    background-color: $bg-white;
+    box-shadow: none;
+  }
+  .DSA_Wb_custom-slideToggle.mat-disabled .mat-slide-toggle-bar{
+    background-color: $bg-neutral-50;
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked .mat-slide-toggle-bar{
+    background-color: $bg-primary-60;
+  }
+  .DSA_Wb_custom-slideToggle.mat-disabled .mat-slide-toggle-thumb{
+    background-color: $bg-neutral-30;
+    border: $border-width-1 solid $border-neutral-50;
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+    background-color: $bg-primary-80;
+  }
+  .DSA_Wb_custom-slideToggle.mat-checked.mat-disabled .mat-slide-toggle-thumb{
+    background-color: $bg-primary-70;
+    border: $border-width-1 solid $border-primary-60;
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked.mat-disabled .mat-slide-toggle-bar{
+    background-color: $bg-primary-60;
+  }
+  .DSA_Wb_custom-slideToggle .mat-slide-toggle-thumb-container{
+    width: 24px;
+    height: 24px;
+    top: -4px;
+    left: -10px;  
+  }  
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container{
+    transform: translate3d(20px,0,0);
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle .mat-slide-toggle-ripple{
+    width: 36px;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);  
+    z-index: -1;
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked .mat-slide-toggle-ripple{
+    width: 36px;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: calc(50% - 24px);  
+    z-index: -1;
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle:not(.mat-checked) .mat-ripple-element{
+    border-radius: $border-radius-small;
+    background: none;
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle:active:not(.mat-disabled),
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle:hover:not(.mat-disabled){
+
+    .mat-slide-toggle-bar{
+      background-color: $border-neutral-80;
+    }
+  } 
+  .DSA_Wb_custom-slideToggle .mat-slide-toggle-bar:hover .mat-slide-toggle-persistent-ripple{
+    opacity: 0;
+  }
+  /* .DSA_Wb_custom-slideToggle .mat-slide-toggle-bar:focus .mat-slide-toggle-persistent-ripple{
+    opacity: 0;
+  } */
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked:active:not(.mat-disabled),
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked:hover:not(.mat-disabled){
+
+    .mat-slide-toggle-bar{
+      background-color: $bg-primary-70;
+    }
+    .mat-slide-toggle-thumb{
+      background-color: $bg-primary-100;
+    }
+  } 
+  // .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked:not(.mat-disabled).mat-accent .mat-ripple-element{
+  //   background-color: $bg-primary-80;
+  // } 
+  // .DSA_Wb_custom-slideToggle.mat-slide-toggle:active:not(.mat-disabled).mat-accent .mat-ripple-element{
+  //   background-color: $bg-neutral-90;
+  //   opacity: 0;
+  //   border-radius: $border-radius-small;
+  // }
+  // .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked:active:not(.mat-disabled).mat-accent .mat-ripple-element{
+  //   background-color: $bg-primary-100;
+  //   opacity: 0.2;
+  //   border-radius: $border-radius-small;
+  // }
+  // .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-checked:not(.mat-disabled).mat-accent .mat-slide-toggle-bar:hover .mat-ripple-element{
+  //   opacity: 0;
+  //   border-radius: $border-radius-small;
+  // }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle.mat-disabled{
+    opacity: 1;
+    .mat-slide-toggle-thumb{
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.16);
+    }
+  }
+  .DSA_Wb_custom-slideToggle.mat-slide-toggle .mat-slide-toggle-content{
+    margin: 0 16px 0 0;
+    color: $text-neutral-80;
+  }
+  .DSA_Wb_custom-slideToggle.mat-disabled .mat-slide-toggle-content{
+    color: $text-neutral-50;
+  }
+  .DSA_Wb_custom-slideToggle.mat-checked .mat-slide-toggle-content{
+    color: $text-black;
+  }
+  .DSA_Wb_custom-slideToggle.mat-checked.mat-disabled .mat-slide-toggle-content{
+    color: $text-black;
+  }
+  
+  /* Slide toggle CSS - End */

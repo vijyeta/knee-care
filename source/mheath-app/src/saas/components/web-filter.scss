@@ -1,0 +1,15 @@
+/* Custom Dropdown for Filter - Start */
+.DSA_wb_custom-dropdown.dropdown-menu{
+    padding: 16px;
+    border-radius: $border-radius-extrabig;
+    border: none;
+    @extend %large-default-shadow;
+    min-width: 256px;
+    .DSA_wb-bottomUtil{
+        position: relative;
+        margin: 16px -16px 0;
+        padding: 16px 0 0;
+        @extend %footer-shadow;
+    }
+}
+/* Custom Dropdown for Filter - End */

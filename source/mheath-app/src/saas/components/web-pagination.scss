@@ -1,0 +1,49 @@
+/* Custom Pagination - Start */
+.DSA_wb_custom-pagination{
+    .page-item{
+        margin-right: 8px;
+        .page-link{
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            margin: 0;
+            line-height: 22px;
+            text-align: center;
+            font-size: $size-text-14;
+            color: $text-black;
+            background-color: transparent;
+            border: none;        
+            border-radius: $border-radius-small;
+            &:hover{      
+                color: $text-primary-80;
+                border: none;  
+                /* @extend %hover-shadow;      
+                background-color: $bg-neutral-40; */
+            }
+            &:focus{
+                color: $text-primary-100;
+                border: none;          
+                box-shadow: none;
+                /* background-color: $bg-neutral-50; */
+            }    
+        } 
+        &.active .page-link{
+            background-color: $bg-primary-80;
+            color: $text-white;
+            border-radius: $border-radius-small;
+            border: none;
+            @extend %pagination-shadow;
+        }  
+        &.disabled .page-link{
+            line-height: 1;
+            background-color: transparent;
+            border: none;
+            color: $text-neutral-50;
+        }
+    }
+    .page-item:last-child{
+        margin: 0;
+    }
+     
+}
+/* Custom Pagination - End */
