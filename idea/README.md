@@ -4,3 +4,6 @@ When it comes to knee pain, it’s majorly women who are feeling the brunt of th
 
 ## Solution
 Our solution aims to uplift the health of women. The use case we demonstrated is towards guiding Women with Osteoarthritis, while this is one use case demonstrated, our solution has the capability to integrate multiple medical conditions through configuration and templatization. Apart from the business features, we also plan to in-cooperate telemetry to analyze and modify the application to increase the usage. We also acknowledge the importance of the data privacy especially for a medical application. Our solution aims for a HIPAA compliance along with advanced consent management system.  
+
+##
+The person performing the yoga pose is a team member.
